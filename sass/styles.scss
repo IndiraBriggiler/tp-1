@@ -1,24 +1,120 @@
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin jc-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin jc-space-around {
+    display: flex;
+    justify-content: space-around; 
+}
+$recipes-font: arial;
+$button-color: #ffb6c1;
+$info-color: #808080;
+body{
+    margin: 0;
+}
+section{
+    margin: 10px;
+}
 .recipes{
-    .recipe-1{
-
-        .recipe-image{
-            display: none
-        }
+    @include column-center();
+    font-family: $recipes-font;
+    .article{
+        @include column-center();
     }
-    .recipe-2{
-        display: none;
+    .button{
+        @include column-center();
+        input{
+            border-radius: 5px;
+            background-color: $button-color;
+            border: 1px solid $button-color;
+            font-size: 15px;
+            font-family: fantasy;
+        }     
     }
 }
-
-
-
-
+.recipe-1{
+    .article-info{
+        @include jc-space-around();
+        color: $info-color;
+        .date{
+            @include column-center();
+        }
+        .social{
+            @include column-center();
+        }
+    }
+    .recipe-image{
+        display: none;
+    }
+    hgroup{
+        h2{
+            color: $info-color;
+        }
+    }
+}
+.recipe-2{
+    display: none;
+    //     .article-info{
+    //     @include jc-space-around();
+            // color: $info-color;
+    //     .date{
+    //         @include column-center();
+    //     }
+    //     .social{
+    //         @include column-center();
+    //     }
+    // hgroup{
+    //     h2{
+    //         color: $info-color;
+    //     }
+    // }
+    // }
+}
+.profile{
+    font-family: $recipes-font;
+    figure{
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    hgroup{
+        @include column();
+        text-align: center;
+        h2{
+            color: $info-color;
+        }
+    }
+}
+.articles-titles{
+    font-family: $recipes-font;
+    @include jc-center();
+    span{
+        width: 80%;
+        background-color: $button-color;
+        @include jc-center();
+    }
+}
 
 $foont: #848484;
 $up: #FF4000;
 .networks{
-    display: flex;
-    justify-content:space-around;
+    @include jc-space-around();
     border-bottom: 1px solid $foont;
     i{
         color:$foont;

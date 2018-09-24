@@ -1,8 +1,99 @@
-.recipes .recipe-1 .recipe-image {
+body {
+  margin: 0;
+}
+
+section {
+  margin: 10px;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+}
+.recipes .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipes .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipes .button input {
+  border-radius: 5px;
+  background-color: #ffb6c1;
+  border: 1px solid #ffb6c1;
+  font-size: 15px;
+  font-family: fantasy;
+}
+
+.recipe-1 .article-info {
+  display: flex;
+  justify-content: space-around;
+  color: #808080;
+}
+.recipe-1 .article-info .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipe-1 .article-info .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipe-1 .recipe-image {
   display: none;
 }
-.recipes .recipe-2 {
+.recipe-1 hgroup h2 {
+  color: #808080;
+}
+
+.recipe-2 {
   display: none;
+}
+
+.profile {
+  font-family: arial;
+}
+.profile figure {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.profile figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile hgroup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.profile hgroup h2 {
+  color: #808080;
+}
+
+.articles-titles {
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+}
+.articles-titles span {
+  width: 80%;
+  background-color: #ffb6c1;
+  display: flex;
+  justify-content: center;
 }
 
 .networks {
