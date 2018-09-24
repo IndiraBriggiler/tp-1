@@ -1,3 +1,28 @@
+.networks {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #848484;
+}
+.networks i {
+  color: #848484;
+  margin: 20px;
+  width: 30px;
+}
+.networks .network {
+  margin: 20px;
+  color: #848484;
+}
 
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+.arrows i {
+  font-size: 40px;
+  padding: 5px;
+  color: #FFFFFF;
+  border-radius: 100%;
+  background-color: #FF4000;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+// FOOTER
+$foont: #848484;
+$up: #FF4000;
+.networks{
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 1px solid $foont;
+    i{
+        color:$foont;
+        margin: 20px;
+        width: 30px;
+        }.network{
+            margin: 20px;
+            color:$foont;
+        }
+}
+
+.arrows{
+   display: flex;
+   justify-content: center;
+    i{
+        font-size: 40px;
+        padding: 5px;
+        color: #FFFFFF;
+        border-radius:100%;
+        background-color: $up;
+    }
+
+}
+// FOOTER
