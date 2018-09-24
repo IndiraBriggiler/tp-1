@@ -1,3 +1,10 @@
+.recipes .recipe-1 .recipe-image {
+  display: none;
+}
+.recipes .recipe-2 {
+  display: none;
+}
+
 .networks {
   display: flex;
   justify-content: space-around;
