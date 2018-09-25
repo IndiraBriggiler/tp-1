@@ -2,6 +2,41 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  color: orange;
+}
+
+.menu {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.menu ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: orange;
+}
+
+.menu > li {
+  float: left;
+}
+
+.menu li ul {
+  position: absolute;
+}
+
+
 section {
   margin: 10px;
 }
