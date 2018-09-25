@@ -16,9 +16,31 @@
     display: flex;
     justify-content: space-around; 
 }
-$recipes-font: arial;
+@mixin article-styles {
+    .article-info{
+        @include jc-space-around();
+            color: $info-color;
+        .date{
+            @include column-center();
+        }
+        .social{
+            @include column-center();
+        }
+    }
+    hgroup{
+        h2{
+            color: $info-color;
+        }
+    }
+}
+
+$title-font: "Indie Flower", cursive;
+$title-color: #fc784f;
+$navbar-color: #666;
+$recipes-font: "IBM Plex Mono", monospace;
 $button-color: #ffb6c1;
 $info-color: #808080;
+
 body{
     margin: 0;
 }
@@ -38,47 +60,15 @@ section{
             background-color: $button-color;
             border: 1px solid $button-color;
             font-size: 15px;
-            font-family: fantasy;
+            font-family: $recipes-font;
         }     
     }
 }
 .recipe-1{
-    .article-info{
-        @include jc-space-around();
-        color: $info-color;
-        .date{
-            @include column-center();
-        }
-        .social{
-            @include column-center();
-        }
-    }
-    .recipe-image{
-        display: none;
-    }
-    hgroup{
-        h2{
-            color: $info-color;
-        }
-    }
+    @include article-styles();
 }
 .recipe-2{
     display: none;
-    //     .article-info{
-    //     @include jc-space-around();
-            // color: $info-color;
-    //     .date{
-    //         @include column-center();
-    //     }
-    //     .social{
-    //         @include column-center();
-    //     }
-    // hgroup{
-    //     h2{
-    //         color: $info-color;
-    //     }
-    // }
-    // }
 }
 .profile{
     font-family: $recipes-font;
@@ -111,18 +101,17 @@ section{
     }
 }
 
-$foont: #848484;
-$up: #FF4000;
+
 .networks{
     @include jc-space-around();
-    border-bottom: 1px solid $foont;
+    border-bottom: 1px solid $info-color;
     i{
-        color:$foont;
+        color:$info-color;
         margin: 20px;
         width: 30px;
         }.network{
             margin: 20px;
-            color:$foont;
+            color:$info-color;
         }
 }
 
@@ -134,8 +123,17 @@ $up: #FF4000;
         padding: 5px;
         color: #FFFFFF;
         border-radius:100%;
-        background-color: $up;
+        background-color: $title-color;
     }
 
 }
-// FOOTER
+@media (min-width 800px){
+    .recipes{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+        .recipe-2{
+            @include article-styles();
+        }
+}

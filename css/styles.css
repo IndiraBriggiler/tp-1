@@ -11,7 +11,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: arial;
+  font-family: "IBM Plex Mono", monospace;
 }
 .recipes .article {
   display: flex;
@@ -30,7 +30,7 @@ section {
   background-color: #ffb6c1;
   border: 1px solid #ffb6c1;
   font-size: 15px;
-  font-family: fantasy;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .recipe-1 .article-info {
@@ -50,9 +50,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-.recipe-1 .recipe-image {
-  display: none;
-}
 .recipe-1 hgroup h2 {
   color: #808080;
 }
@@ -62,7 +59,7 @@ section {
 }
 
 .profile {
-  font-family: arial;
+  font-family: "IBM Plex Mono", monospace;
 }
 .profile figure {
   margin: 0;
@@ -85,7 +82,7 @@ section {
 }
 
 .articles-titles {
-  font-family: arial;
+  font-family: "IBM Plex Mono", monospace;
   display: flex;
   justify-content: center;
 }
@@ -99,16 +96,16 @@ section {
 .networks {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #848484;
+  border-bottom: 1px solid #808080;
 }
 .networks i {
-  color: #848484;
+  color: #808080;
   margin: 20px;
   width: 30px;
 }
 .networks .network {
   margin: 20px;
-  color: #848484;
+  color: #808080;
 }
 
 .arrows {
@@ -120,7 +117,36 @@ section {
   padding: 5px;
   color: #FFFFFF;
   border-radius: 100%;
-  background-color: #FF4000;
+  background-color: #fc784f;
+}
+
+@media (min-width 800px) {
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .recipe-2 .article-info {
+    display: flex;
+    justify-content: space-around;
+    color: #808080;
+  }
+  .recipe-2 .article-info .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .recipe-2 .article-info .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .recipe-2 hgroup h2 {
+    color: #808080;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
