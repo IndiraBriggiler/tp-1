@@ -1,88 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0' />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <title>Mi Blog de cocina</title>
 </head>
+
 <body>
-    <!-- Lourdes -->
-        <header>
-                <h1>Mi Blog de Cocina</h1>
-            </header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Platos</a>
-                        <ul class="submenu">
-                            <li><a href="#">Ensalada</a></li>
-                            <li><a href="#">Carne</a></li>
-                            <li><a href="#">Helado</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
-            </nav>
+    <header>
+        <h1>Mi Blog de Cocina</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">platos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ensalada</a></li>
+                        <li><a href="#">Carne</a></li>
+                        <li><a href="#">Helado</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <br> 
+    <section>
+        <a href="receta.html"><img src="../images/img-1.jpg" width="330px" height="400px"></a>
+        <img src="../images/img-2.jpg" width="330px" height="400px">
+        <img src="../images/img-3.jpg" width="330px" height="400px">
+        <img src="../images/img-4.jpg" width="330px" height="400px">
+        <a href="receta.html"><img src="../images/platos.jpeg" width="300px" height="200px"></a>
+        <img src="../images/recetas.JPG" width="330px" height="400px">
+        <button>EXÓTICOS</button>
+    </section>
 
-            <br>
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DZ-DkAtQrGo" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+    </section>
 
-            <br>
+    <section class="profile">
+        <div class="articles-titles">
+            <span>SOBRE NOSOTRAS</span>
+        </div>
+        <figure>
+            <img src="../images/perfil.jpg" alt="Your browser does not support the image">
+        </figure>
+        <hgroup>
+            <h1>Leydi Gaby Indira Lourdes</h1>
+            <h2>Somos de la 4ta generacion de Ada! Es nuestro primer TP grupal.</h2>
+        </hgroup>
+    </section>
 
-            <br>
+    <section class="news">
+        <div class="articles-titles">
+            <span>NEWSLETTER</span>
+        </div>
+    </section>
 
-            <section>
-                <img src="../images/img-1.jpg" width="330px" height="400px">
-                <img src="../images/img-2.jpg" width="330px" height="400px">
-                <img src="../images/img-3.jpg" width="330px" height="400px">
-                <img src="../images/img-4.jpg" width="330px" height="400px">
-                <img src="../images/platos.jpeg" width="300px" height="200px">
-                <img src="/README.md" width="300px" height="200px">
-                <button>EXÓTICOS</button>
-            </section>
-
-
-<!-- hasta aca -->
-
-
-<section class="video"> 
-    <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">   
-    </video>
-</section>
-<section class="profile">
-    <div class="articles-titles">
-        <span>SOBRE NOSOTRAS</span>
-    </div>
-    <figure>
-        <img src="../images/perfil.jpg" alt="Your browser does not support the image">
-    </figure>
-    <hgroup>
-        <h1>Leydi Gaby Indira Lourdes</h1>
-        <h2>Somos de la 4ta generacion de Ada! Es nuestro primer TP grupal.</h2>
-    </hgroup>
-</section>
-<section class="news">
-    <div class="articles-titles">
-        <span>NEWSLETTER</span>
-    </div>
-</section>
-<section class="recipes">
+    <section class="recipes">
         <article class="recipe-1">
             <figure class="recipe-image">
                 <img src="../images/nota1.JPG" alt="Your browser does not support the image">
             </figure>
-            <div class="article-info">       
+            <div class="article-info">
                 <div class="date">
                     <span>By Maria | Mayo 19,</span>
                     <time>2017</time>
@@ -94,25 +83,26 @@
                     </div>
                     <div class="share">
                         <span><i class="fas fa-share-alt"></i></span>
-                    </div> 
-                </div>    
-            </div> 
+                    </div>
+                </div>
+            </div>
             <hgroup class="article">
                 <h1 class="recipe-title">Delicias dulces</h1>
-                <h2 class="recipe-presentation">En este articulo van a poder ver una receta muy simple, sana y muy rica!</h2>
+                <h2 class="recipe-presentation">En este articulo van a poder ver una receta muy simple, sana y muy
+                    rica!</h2>
             </hgroup>
             <div class="button">
                 <input type="button" value="Leer más">
             </div>
-    </article>
-    <article class="recipe-2">
+        </article>
+        <article class="recipe-2">
             <figure class="recipe-image">
                 <img src="../images/nota2.JPG" alt="Your browser does not support the image">
             </figure>
-            <div class="article-info">       
+            <div class="article-info">
                 <div class="date">
                     <span>By Maria | Mayo 19,</span>
-                    <time>2017</time> 
+                    <time>2017</time>
                 </div>
                 <div class="social">
                     <div class="likes">
@@ -121,33 +111,33 @@
                     </div>
                     <div class="share">
                         <span><i class="fas fa-share-alt"></i></span>
-                    </div> 
-                </div>    
-            </div> 
+                    </div>
+                </div>
+            </div>
             <hgroup class="article">
                 <h1 class="recipe-title">Comidas simples</h1>
-                <h2 class="recipe-presentation">En este articulo van a poder ver una receta muy simple, sana y muy rica!</h2>
+                <h2 class="recipe-presentation">En este articulo van a poder ver una receta muy simple, sana y muy
+                    rica!</h2>
             </hgroup>
             <div class="button">
                 <input type="button" class="button" value="Leer más">
             </div>
-    </article>
-</section>
+        </article>
+    </section>
 
-
-<footer>
-    <div class="networks">
-        <i class="fab fa-facebook-f"></i><span class="network">FACEBOOK</span>
-        <i class="fab fa-twitter"></i><span class="network">TWITER</span>
-        <i class="fab fa-google-plus-g"></i><span class="network">GOOGLE+</span>
-        <i class="fab fa-linkedin"></i><span class="network">LINKEDIN</span>
-        <i class="fab fa-instagram"></i><span class="network">INSTAGRAM</span>
-        <i class="fab fa-youtube"></i><span class="network">YOUTUBE</span>
-    </div>
-    <div class="arrows">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</footer>
-     <!-- leydi -->
+    <footer>
+        <div class="networks">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span class="network">FACEBOOK</span></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i><span class="network">TWITER</span></a>
+            <a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i><span class="network">GOOGLE+</span></a>
+            <a href="https://www.linkedin.com/m/login/"><i class="fab fa-linkedin"></i><span class="network">LINKEDIN</span></a>
+            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i><span class="network">INSTAGRAM</span></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i><span class="network">YOUTUBE</span></a>
+        </div>
+        <div class="arrows">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
 </body>
+
 </html>
