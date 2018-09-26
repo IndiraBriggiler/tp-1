@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <title>Recetas</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Receta</title>
 </head>
 <body>
-    <!--título del blog-->
+    <header>
+        <h1>Mi Blog de Cocina</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">platos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ensalada</a></li>
+                        <li><a href="#">Carne</a></li>
+                        <li><a href="#">Helado</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+        <figure class="picbanner">
+            <img src="../images/banner.jpg" />
+        </figure>
+    </header>
 
-    <!--menu-->
-
-    <figure class="picbanner">
-        <img src="../images/banner.jpg" />
-    </figure>
     <div class="breadcrumbs">
         <i class="fas fa-home"></i>
         <span>Home</span>
@@ -49,7 +64,7 @@
             <span>By Maria</span>
             <time>Mayo 29, 2017</time>
             <span></span>
-<!--iconos n stuff-->
+<!-- iconos -->
         </figcaption>
         <hgroup>
             <h1>Pionono salado</h1>
@@ -68,6 +83,18 @@
             <li>1 paquete de queso danbo en fetas</li>
         </ul>
     </article>
-<!--footer con iconos de rrss-->
+    <footer>
+        <div class="networks">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span class="network">FACEBOOK</span></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i><span class="network">TWITER</span></a>
+            <a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i><span class="network">GOOGLE+</span></a>
+            <a href="https://www.linkedin.com/m/login/"><i class="fab fa-linkedin"></i><span class="network">LINKEDIN</span></a>
+            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i><span class="network">INSTAGRAM</span></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i><span class="network">YOUTUBE</span></a>
+        </div>
+        <div class="arrows">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
 </body>
 </html>
