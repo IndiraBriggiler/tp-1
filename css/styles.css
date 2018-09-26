@@ -2,8 +2,72 @@ body {
   margin: 0;
 }
 
-section {
-  margin: 10px;
+header {
+  font-family: "Indie Flower", cursive;
+  color: #fc784f;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu li a {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.menu {
+  font-size: 15px;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.enlaces {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+}
+
+.enlaces a {
+  color: black;
+  background-color: white;
+}
+
+.enlaces img {
+  border-radius: 60px;
+  padding: 30px;
+  width: 400px;
+  height: 250px;
+}
+
+button {
+  width: 125px;
+  height: 23px;;
+  border: none;
+  border-radius: 10px;
+  background-color: #fc784f;
+  position: absolute;
+  left: 80%;
+  top: 40%;
 }
 
 .recipes {
@@ -123,7 +187,7 @@ section {
   background-color: #fc784f;
 }
 
-@media (min-width 800px) {
+@media (min-width: 800px) {
   .recipes {
     display: flex;
     flex-direction: column;
