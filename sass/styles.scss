@@ -16,6 +16,11 @@
   display: flex;
   justify-content: space-around;
 }
+@mixin jc-space-bt {
+  display: flex;
+  justify-content: space-between;
+  
+}
 @mixin article-styles {
   .article-info {
     @include jc-space-around();
@@ -177,7 +182,7 @@ ul{
 }
 
 .networks {
-  @include jc-space-around();
+  @include jc-space-bt();
   border-bottom: 1px solid $info-color;
   i {
     color: $info-color;
@@ -187,6 +192,8 @@ ul{
   .network {
     margin: 20px;
     color: $info-color;
+    display: none;
+    width: 20px;
   }
   a {
     text-decoration: none;
@@ -196,6 +203,7 @@ ul{
 .arrows {
   display: flex;
   justify-content: center;
+  
   i {
     font-size: 40px;
     padding: 5px;

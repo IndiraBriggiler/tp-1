@@ -166,7 +166,7 @@ ul li a {
 
 .networks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid #808080;
 }
 .networks i {
@@ -177,6 +177,8 @@ ul li a {
 .networks .network {
   margin: 20px;
   color: #808080;
+  display: none;
+  width: 20px;
 }
 .networks a {
   text-decoration: none;
