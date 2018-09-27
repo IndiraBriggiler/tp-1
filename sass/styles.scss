@@ -112,6 +112,7 @@ section {
   .network {
     margin: 20px;
     color: $info-color;
+    display:block;
   }
   a {
     text-decoration: none;
@@ -121,6 +122,7 @@ section {
 .arrows {
   display: flex;
   justify-content: center;
+ 
   i {
     font-size: 40px;
     padding: 5px;
@@ -129,7 +131,7 @@ section {
     background-color: $title-color;
   }
 }
-@media (min-width 800px) {
+@media (min-width: 800px) {
   .recipes {
     display: flex;
     flex-direction: column;
@@ -137,5 +139,9 @@ section {
   }
   .recipe-2 {
     @include article-styles();
+  } 
+  .network{
+    display: none;
   }
+ 
 }
