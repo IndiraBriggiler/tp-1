@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 @mixin column {
   display: flex;
@@ -11,6 +11,11 @@
 @mixin jc-center {
   display: flex;
   justify-content: center;
+}
+@mixin jc-ac-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 @mixin jc-space-around {
   display: flex;
@@ -43,7 +48,8 @@ $recipes-font: "IBM Plex Mono", monospace;
 $button-color: #ffb6c1;
 $info-color: #808080;
 *{
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 body {
   margin: 0;
@@ -88,13 +94,14 @@ nav{
   }
   .mobile{
     width: 500px;
+    height: 30px;
     background-color: $title-color;
     border-radius: 5px;
     margin: 20px;
     font-family: $recipes-font;
     color: #ffffff;
-    @include jc-center();
-    align-content: center;
+    @include jc-ac-center();
+    align-items: center;
     ul{
       height: 15px;
       display: flex;
@@ -115,8 +122,10 @@ ul{
   }
 }
 .menu{
+  margin: 0;
+  @include jc-ac-center();
   li{
-    ul{
+      ul{
       display: none;
     }
   }
