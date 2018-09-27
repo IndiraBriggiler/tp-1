@@ -17,18 +17,32 @@
     <header>
         <h1>Mi Blog de Cocina</h1>
         <nav>
-            <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PLATOS</a>
-                    <ul class="submenu">
-                        <li><a href="#">ENSALADA</a></li>
-                        <li><a href="#">CARNE</a></li>
-                        <li><a href="#">HELADO</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">CONTACTOS</a></li>
-            </ul>
+            <div class="mobile">
+                 <ul class="menu">
+                    <li class="dropdown"><i class="fas fa-bars"></i>MENU>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PLATOS</a></li>
+                            <li><a href="#">SOBRE MI</a></li>
+                            <li><a href="#">CONTACTOS</a></li>
+                        </ul>
+                    </li> 
+                 </ul>         
+            </div>
+            <div class="desktop">        
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PLATOS</a>
+                        <ul class="submenu">
+                            <li><a href="#">ENSALADA</a></li>
+                            <li><a href="#">CARNE</a></li>
+                            <li><a href="#">HELADO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOBRE MI</a></li>
+                    <li><a href="#">CONTACTOS</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

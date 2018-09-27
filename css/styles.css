@@ -75,6 +75,35 @@ nav .mobile ul li {
   margin: 10px;
 }
 
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.menu li ul {
+  display: none;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.dropdown:hover ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: absolute;
+}
+.dropdown:hover ul li {
+  color: #ffffff;
+  background-color: #fc784f;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  margin: 0;
+}
+
 .recipe-1 .article-info {
   display: flex;
   justify-content: space-around;
@@ -165,7 +194,7 @@ nav .mobile ul li {
   background-color: #fc784f;
 }
 
-@media (min-width 800px) {
+@media (min-width: 800px) {
   ul {
     list-style: none;
     display: flex;
@@ -219,42 +248,6 @@ nav .mobile ul li {
   .recipe-2 hgroup h2 {
     color: #808080;
   }
-}
-header {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-}
-
-nav {
-  width: 100%;
-  height: 30px;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  position: relative;
-}
-
-.menu li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  transition: all 0.3s;
-}
-
-.submenu {
-  position: absolute;
-}
-
-.submenu li a {
-  display: block;
-  padding: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
