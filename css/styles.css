@@ -165,7 +165,7 @@ nav .mobile ul li {
   background-color: #fc784f;
 }
 
-@media (min-width 800px) {
+@media (min-width: 800px) {
   ul {
     list-style: none;
     display: flex;
