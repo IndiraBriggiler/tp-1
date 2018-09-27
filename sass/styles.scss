@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
 }
-// indira
 @mixin column {
   display: flex;
   flex-direction: column;
@@ -41,10 +40,26 @@ $navbar-color: #666;
 $recipes-font: "IBM Plex Mono", monospace;
 $button-color: #ffb6c1;
 $info-color: #808080;
-
+*{
+  padding: 0px;
+}
 body {
   margin: 0;
 }
+header{
+  @include column-center();
+  h1{
+    font-family: $title-font;
+    color: $title-color;
+    font-size: 30px;
+  }
+  nav{
+    font-family: $recipes-font;
+    
+  }
+}
+
+
 section {
   margin: 10px;
 }
@@ -65,6 +80,31 @@ section {
     }
   }
 }
+nav{
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    width: 500px;
+    background-color: $title-color;
+    border-radius: 5px;
+    margin: 20px;
+    font-family: $recipes-font;
+    color: #ffffff;
+    @include jc-center();
+    align-content: center;
+    ul{
+      height: 15px;
+      display: flex;
+      list-style: none;
+      li{
+        margin: 10px;
+      }
+    }
+  }
+}
+
+
 .recipe-1 {
   @include article-styles();
 }
@@ -113,7 +153,6 @@ section {
   .network {
     margin: 20px;
     color: $info-color;
-    display:block;
   }
   a {
     text-decoration: none;
@@ -123,7 +162,6 @@ section {
 .arrows {
   display: flex;
   justify-content: center;
- 
   i {
     font-size: 40px;
     padding: 5px;
@@ -132,7 +170,35 @@ section {
     background-color: $title-color;
   }
 }
-@media (min-width: 800px) {
+@media (min-width 800px) {
+  ul{
+    list-style: none;     
+    display: flex;
+    justify-content: space-around; 
+    li{
+      margin: 5px;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: $navbar-color;
+        font-size: 10px;
+      }
+    }
+  }
+  .submenu{
+    li{
+      display: none;
+    }
+  }
+  
+  header nav div ul li a:hover{
+    background-color: $info-color;
+  }
+  
+  // CHEQUEAR
+  nav ul.menu li:hover > ul.submenu{
+    display: flex;
+  }
   .recipes {
     display: flex;
     flex-direction: column;
@@ -140,9 +206,5 @@ section {
   }
   .recipe-2 {
     @include article-styles();
-  } 
-  .network{
-    display: none;
   }
- 
 }
