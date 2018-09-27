@@ -1,5 +1,24 @@
+* {
+  padding: 0px;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: "Indie Flower", cursive;
+  color: #fc784f;
+  font-size: 30px;
+}
+header nav {
+  font-family: "IBM Plex Mono", monospace;
 }
 
 section {
@@ -31,6 +50,29 @@ section {
   border: 1px solid #ffb6c1;
   font-size: 15px;
   font-family: "IBM Plex Mono", monospace;
+}
+
+nav .desktop {
+  display: none;
+}
+nav .mobile {
+  width: 500px;
+  background-color: #fc784f;
+  border-radius: 5px;
+  margin: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+nav .mobile ul {
+  height: 15px;
+  display: flex;
+  list-style: none;
+}
+nav .mobile ul li {
+  margin: 10px;
 }
 
 .recipe-1 .article-info {
@@ -106,7 +148,6 @@ section {
 .networks .network {
   margin: 20px;
   color: #808080;
-  display: block;
 }
 .networks a {
   text-decoration: none;
@@ -124,7 +165,34 @@ section {
   background-color: #fc784f;
 }
 
-@media (min-width: 800px) {
+@media (min-width 800px) {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  ul li {
+    margin: 5px;
+    text-align: center;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 10px;
+  }
+
+  .submenu li {
+    display: none;
+  }
+
+  header nav div ul li a:hover {
+    background-color: #808080;
+  }
+
+  nav ul.menu li:hover > ul.submenu {
+    display: flex;
+  }
+
   .recipes {
     display: flex;
     flex-direction: column;
@@ -151,10 +219,42 @@ section {
   .recipe-2 hgroup h2 {
     color: #808080;
   }
+}
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
 
-  .network {
-    display: none;
-  }
+nav {
+  width: 100%;
+  height: 30px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
