@@ -1,5 +1,6 @@
 * {
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -10,7 +11,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 header h1 {
   font-family: "Indie Flower", cursive;
@@ -29,20 +30,20 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   font-family: "IBM Plex Mono", monospace;
 }
 .recipes .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .recipes .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .recipes .button input {
   border-radius: 5px;
@@ -57,6 +58,7 @@ nav .desktop {
 }
 nav .mobile {
   width: 500px;
+  height: 30px;
   background-color: #fc784f;
   border-radius: 5px;
   margin: 20px;
@@ -65,6 +67,7 @@ nav .mobile {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 nav .mobile ul {
   height: 15px;
@@ -81,6 +84,12 @@ ul li a {
   font-size: 20px;
 }
 
+.menu {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .menu li ul {
   display: none;
 }
@@ -113,13 +122,13 @@ ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .recipe-1 .article-info .social {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .recipe-1 hgroup h2 {
   color: #808080;
@@ -167,16 +176,19 @@ ul li a {
 .networks {
   display: flex;
   justify-content: space-around;
+  height: 40px;
   border-bottom: 1px solid #808080;
 }
 .networks i {
   color: #808080;
-  margin: 20px;
+  margin: 0px;
   width: 30px;
 }
 .networks .network {
   margin: 20px;
   color: #808080;
+  display: none;
+  width: 20px;
 }
 .networks a {
   text-decoration: none;
@@ -185,9 +197,12 @@ ul li a {
 .arrows {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 20px;
+  margin-right: 12px;
 }
 .arrows i {
-  font-size: 40px;
+  font-size: 30px;
   padding: 5px;
   color: #ffffff;
   border-radius: 100%;
@@ -237,16 +252,64 @@ ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
   .recipe-2 .article-info .social {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
   .recipe-2 hgroup h2 {
     color: #808080;
+  }
+
+  .content-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content-1 {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    background: rgba(219, 71, 12, 0.356);
+    top: 0;
+    margin-top: 100%;
+  }
+
+  .content-img:hover .content-1 {
+    margin-top: 75%;
+    transition: all 300ms;
+  }
+
+  .content-txt {
+    position: absolute;
+    top: 0;
+    margin-top: 820px;
+    padding: 10px;
+    z-index: 10;
+    color: #ffffff;
+  }
+
+  .content-txt span {
+    opacity: 0;
+    font-size: 10px;
+  }
+
+  .content-txt figcaption {
+    opacity: 0;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .content-img:hover span {
+    opacity: 10;
+    transition: all 400ms;
+  }
+
+  .content-img:hover figcaption {
+    opacity: 10;
+    transition: all 400ms;
   }
 }
 

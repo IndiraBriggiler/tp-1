@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 @mixin column {
   display: flex;
@@ -12,9 +12,18 @@
   display: flex;
   justify-content: center;
 }
+@mixin jc-ac-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 @mixin jc-space-around {
   display: flex;
   justify-content: space-around;
+}
+@mixin jc-space-bt {
+  display: flex;
+  justify-content: space-between;
 }
 @mixin article-styles {
   .article-info {
@@ -34,7 +43,7 @@
   }
 }
 
-$white: #ffffff; 
+$white: #ffffff;
 $black: #000000;
 $title-font: "Indie Flower", cursive;
 $title-color: #fc784f;
@@ -42,25 +51,26 @@ $navbar-color: #666;
 $recipes-font: "IBM Plex Mono", monospace;
 $button-color: #ffb6c1;
 $info-color: #808080;
-*{
-  padding: 0px;
+$hovr-color: #fa906f;
+
+* {
+  padding: 0;
+  margin: 0;
 }
 body {
   margin: 0;
 }
-header{
+header {
   @include column-center();
-  h1{
+  h1 {
     font-family: $title-font;
     color: $title-color;
     font-size: 30px;
   }
-  nav{
+  nav {
     font-family: $recipes-font;
-    
   }
 }
-
 
 section {
   margin: 10px;
@@ -82,53 +92,56 @@ section {
     }
   }
 }
-nav{
-  .desktop{
+nav {
+  .desktop {
     display: none;
   }
-  .mobile{
+  .mobile {
     width: 500px;
+    height: 30px;
     background-color: $title-color;
     border-radius: 5px;
     margin: 20px;
     font-family: $recipes-font;
     color: #ffffff;
-    @include jc-center();
-    align-content: center;
-    ul{
+    @include jc-ac-center();
+    align-items: center;
+    ul {
       height: 15px;
       display: flex;
       list-style: none;
-      li{
+      li {
         margin: 10px;
       }
     }
   }
 }
-ul{
-  li{
-    a{
+ul {
+  li {
+    a {
       text-decoration: none;
       color: $white;
       font-size: 20px;
     }
   }
 }
-.menu{
-  li{
-    ul{
+.menu {
+  margin: 0;
+  @include jc-ac-center();
+  li {
+    ul {
       display: none;
     }
   }
 }
-.dropdown:hover{
+.dropdown:hover {
   cursor: pointer;
   color: $black;
-  ul{
+  ul {
     @include column();
     justify-content: start;
     position: absolute;
-    li{
+    li {
       color: $white;
       background-color: $title-color;
       width: 100px;
@@ -178,15 +191,18 @@ ul{
 
 .networks {
   @include jc-space-around();
+  height: 40px;
   border-bottom: 1px solid $info-color;
   i {
     color: $info-color;
-    margin: 20px;
+    margin: 0px;
     width: 30px;
   }
   .network {
     margin: 20px;
     color: $info-color;
+    display: none;
+    width: 20px;
   }
   a {
     text-decoration: none;
@@ -196,41 +212,45 @@ ul{
 .arrows {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 20px;
+  margin-right: 12px;
   i {
-    font-size: 40px;
+    font-size: 30px;
     padding: 5px;
     color: #ffffff;
     border-radius: 100%;
     background-color: $title-color;
   }
 }
+
 @media (min-width: 800px) {
-  ul{
-    list-style: none;     
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around; 
-    li{
+    justify-content: space-around;
+    li {
       margin: 5px;
       text-align: center;
-      a{
+      a {
         text-decoration: none;
         color: $navbar-color;
         font-size: 10px;
       }
     }
   }
-  .submenu{
-    li{
+  .submenu {
+    li {
       display: none;
     }
   }
-  
-  header nav div ul li a:hover{
+
+  header nav div ul li a:hover {
     background-color: $info-color;
   }
-  
+
   // CHEQUEAR
-  nav ul.menu li:hover > ul.submenu{
+  nav ul.menu li:hover > ul.submenu {
     display: flex;
   }
   .recipes {
@@ -241,6 +261,53 @@ ul{
   .recipe-2 {
     @include article-styles();
   }
+  .content-img {
+    position: relative;
+    overflow: hidden;
+  }
+  .content-1 {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    background: rgba(219, 71, 12, 0.356);
+    top: 0;
+    margin-top: 100%;
+  }
+  .content-img:hover .content-1 {
+    margin-top: 75%;
+    transition: all 300ms;
+  }
+  .content-txt {
+    position: absolute;
+    top: 0;
+    margin-top: 820px;
+    padding: 10px;
+    z-index: 10;
+    color: $white;
+  }
+
+  .content-txt span {
+    opacity: 0;
+    font-size: 10px;
+  }
+  .content-txt figcaption {
+    opacity: 0;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .content-img:hover span {
+    opacity: 10;
+    transition: all 400ms;
+  }
+
+  .content-img:hover figcaption {
+    opacity: 10;
+    transition: all 400ms;
+  }
+  // .arrows {
+  //   display: none;
+  // }
+  // .network {
+  //   display: block;
+  // }
 }
-
-
