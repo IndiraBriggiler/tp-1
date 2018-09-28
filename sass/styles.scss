@@ -225,6 +225,10 @@ ul {
 }
 
 @media (min-width: 800px) {
+  .arrows{
+      background-color: red;
+  }
+  
   ul {
     list-style: none;
     display: flex;
@@ -304,10 +308,10 @@ ul {
     opacity: 10;
     transition: all 400ms;
   }
-  // .arrows {
-  //   display: none;
-  // }
-  // .network {
-  //   display: block;
-  // }
+  .arrows {
+    display: none;
+  }
+  .network {
+    display: block;
+ }
 }

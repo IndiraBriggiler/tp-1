@@ -210,6 +210,10 @@ ul li a {
 }
 
 @media (min-width: 800px) {
+  .arrows {
+    background-color: red;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -310,6 +314,14 @@ ul li a {
   .content-img:hover figcaption {
     opacity: 10;
     transition: all 400ms;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .network {
+    display: block;
   }
 }
 
