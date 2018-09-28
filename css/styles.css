@@ -14,42 +14,11 @@ header {
   align-content: center;
 }
 header h1 {
-  font-family: "Indie Flower", cursive;
   color: #fc784f;
+  font-family: "Indie Flower", cursive;
   font-size: 30px;
 }
 header nav {
-  font-family: "IBM Plex Mono", monospace;
-}
-
-section {
-  margin: 10px;
-}
-
-.recipes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "IBM Plex Mono", monospace;
-}
-.recipes .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipes .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipes .button input {
-  border-radius: 5px;
-  background-color: #ffb6c1;
-  border: 1px solid #ffb6c1;
-  font-size: 15px;
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -113,31 +82,6 @@ ul li a {
   margin: 0;
 }
 
-.recipe-1 .article-info {
-  display: flex;
-  justify-content: space-around;
-  color: #808080;
-}
-.recipe-1 .article-info .date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipe-1 .article-info .social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipe-1 hgroup h2 {
-  color: #808080;
-}
-
-.recipe-2 {
-  display: none;
-}
-
 .profile {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -161,6 +105,33 @@ ul li a {
   color: #808080;
 }
 
+.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+.recipes .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.recipes .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.recipes .button input {
+  border-radius: 5px;
+  background-color: #ffb6c1;
+  border: 1px solid #ffb6c1;
+  font-size: 15px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
 .articles-titles {
   font-family: "IBM Plex Mono", monospace;
   display: flex;
@@ -171,6 +142,31 @@ ul li a {
   background-color: #ffb6c1;
   display: flex;
   justify-content: center;
+}
+
+.recipe-1 .article-info {
+  display: flex;
+  justify-content: space-around;
+  color: #808080;
+}
+.recipe-1 .article-info .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.recipe-1 .article-info .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.recipe-1 hgroup h2 {
+  color: #808080;
+}
+
+.recipe-2 {
+  display: none;
 }
 
 .networks {
@@ -241,6 +237,26 @@ ul li a {
     display: flex;
   }
 
+  .content-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content-img:hover .content-1 {
+    margin-top: 75%;
+    transition: all 300ms;
+  }
+
+  .content-img:hover span {
+    opacity: 10;
+    transition: all 400ms;
+  }
+
+  .content-img:hover figcaption {
+    opacity: 10;
+    transition: all 400ms;
+  }
+
   .recipes {
     display: flex;
     flex-direction: column;
@@ -268,60 +284,12 @@ ul li a {
     color: #808080;
   }
 
-  .content-img {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .content-1 {
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    background: rgba(219, 71, 12, 0.356);
-    top: 0;
-    margin-top: 100%;
-  }
-
-  .content-img:hover .content-1 {
-    margin-top: 75%;
-    transition: all 300ms;
-  }
-
-  .content-txt {
-    position: absolute;
-    top: 0;
-    margin-top: 820px;
-    padding: 10px;
-    z-index: 10;
-    color: #ffffff;
-  }
-
-  .content-txt span {
-    opacity: 0;
-    font-size: 10px;
-  }
-
-  .content-txt figcaption {
-    opacity: 0;
-    font-family: "IBM Plex Mono", monospace;
-  }
-
-  .content-img:hover span {
-    opacity: 10;
-    transition: all 400ms;
-  }
-
-  .content-img:hover figcaption {
-    opacity: 10;
-    transition: all 400ms;
+  .network {
+    display: block;
   }
 
   .arrows {
     display: none;
-  }
-
-  .network {
-    display: block;
   }
 }
 

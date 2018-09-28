@@ -7,29 +7,40 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Receta</title>
 </head>
 <body>
     <header>
         <h1>Mi Blog de Cocina</h1>
         <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">platos</a>
-                    <ul class="submenu">
-                        <li><a href="#">Ensalada</a></li>
-                        <li><a href="#">Carne</a></li>
-                        <li><a href="#">Helado</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
+            <div class="mobile">
+                 <ul class="menu">
+                    <li class="dropdown"><i class="fas fa-bars"></i>MENU>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PLATOS</a></li>
+                            <li><a href="#">SOBRE MI</a></li>
+                            <li><a href="#">CONTACTOS</a></li>
+                        </ul>
+                    </li> 
+                 </ul>         
+            </div>
+            <div class="desktop">        
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PLATOS</a>
+                        <ul class="submenu">
+                            <li><a href="#">ENSALADA</a></li>
+                            <li><a href="#">CARNE</a></li>
+                            <li><a href="#">HELADO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOBRE MI</a></li>
+                    <li><a href="#">CONTACTOS</a></li>
+                </ul>
+            </div>
         </nav>
-        <figure class="picbanner">
-            <img src="../images/banner.jpg" />
-        </figure>
     </header>
 
     <div class="breadcrumbs">
@@ -39,36 +50,46 @@
         <span class="lightdescr">Post único</span>
     </div>
     <!--compartir en redes sociales-->
-    <div class="socmediashare">
-        <div class="share facebook">
-            <i class="fab fa-facebook-f"></i>
-        </div>
-        <div class="share twitter">
-            <i class="fab fa-twitter"></i>
-        </div>
-        <div class="share google">
-            <i class="fab fa-google-plus-g"></i>
-        </div>
-        <div class="share insta">
-            <i class="fab fa-instagram"></i>
-        </div>
-        <div class="share pinterest">
-            <i class="fab fa-pinterest-p"></i>
-        </div>
-    </div>
     <article>
-        <figure class="recipephoto">
-            <img src="../images/recetas.jpg" />
-        </figure>
-        <figcaption>
+        <div class="artcontainer">
+            <div class="socmediashare">
+                <div class="share facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="share twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="share google">
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div class="share insta">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="share pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+            <figure class="recipephoto">
+                <img src="../images/recetas.jpg" />
+            </figure>
+        </div>
+        <div class="posted">
             <span>By Maria</span>
             <time>Mayo 29, 2017</time>
-            <span></span>
-<!-- iconos -->
-        </figcaption>
-        <hgroup>
-            <h1>Pionono salado</h1>
-            <h2>Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. Aquí va la receta bien caserita, como lo hacía mi abuela.</h2>
+        </div>
+        <div class="social">
+            <div class="likes">
+                <span><i class="far fa-heart"></i></i>20</span>
+                <span><i class="far fa-comments"></i>10</span>
+            </div>
+            <div class="share">
+                <span><i class="fas fa-share-alt"></i></span>
+            </div>
+        </div>
+    </div>
+        <hgroup class="article">
+            <h1 class="recipe-title">Pionono salado</h1>
+            <h2 class="recipe-presentation">Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. Aquí va la receta bien caserita, como lo hacía mi abuela.</h2>
         </hgroup>
         <blockquote>
             <p>"La cocina es algo que viene de generación en generación, desde nuestros ancestros hasta ahora en nuestra actualidad. Muchas recetas tradicionales".</p>
