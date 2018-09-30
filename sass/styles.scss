@@ -35,11 +35,16 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
-@mixin article-styles {
+@mixin recipe-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .article-info {
-    @include jc-space-around();
+    @include jc-space-bt();
     color: $info-color;
-    .date {
+    font-size: 15px;
+    margin: 10px 0px;
+    .posted {
       @include column-center();
     }
     .social {
@@ -47,8 +52,14 @@ $hovr-color: #fa906f;
     }
   }
   hgroup {
+    h1{
+      font-size: 20px;
+      margin: 10px 0x;
+    }
     h2 {
       color: $info-color;
+      font-size: 15px;
+      margin: 10px 0x;
     }
   }
 }
@@ -133,20 +144,32 @@ ul {
 }
 
 
-
+img{
+  width: 100%;
+}
+iframe{
+  display: none;
+}
 
 
 // estilos desde carousel hasta "newsletter" //
-
-
-
+.triple-container{
+  margin: 15px;
+}
+section{
+  margin: 50px 20px 20px 20px;
+}
+.profile-recipes{
+  display: flex;
+  flex-direction: column-reverse;
+}
 .profile {
   font-family: $recipes-font;
   figure {
     margin: 0;
     padding: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     img {
       width: 100%;
@@ -156,8 +179,14 @@ ul {
   hgroup {
     @include column();
     text-align: center;
+    margin-top: 20px;
+    h1{
+      font-size: 20px;
+      margin: 10px 0px;
+    }
     h2 {
       color: $info-color;
+      font-size: 15px;
     }
   }
 }
@@ -165,13 +194,24 @@ ul {
 .recipes {
   @include column-center();
   font-family: $recipes-font;
+  article {
+    figure {
+      display: none;
+    }
+  }
   .article {
     @include column-center();
+    align-items: center;
+    align-content: center;
   }
   .button {
     @include column-center();
+    margin: 5px;
     input {
       border-radius: 5px;
+      padding: 5px;
+      width: 120px;
+      height: 35px;
       background-color: $button-color;
       border: 1px solid $button-color;
       font-size: 15px;
@@ -182,16 +222,22 @@ ul {
 
 .articles-titles {
   font-family: $recipes-font;
-  @include jc-center();
+  margin-top: 20px;
+  margin-bottom: 20px;
   span {
-    width: 80%;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
     background-color: $button-color;
-    @include jc-center();
+    @include jc-ac-center();
+    align-items: center;
   }
 }
 
 .recipe-1 {
-  @include article-styles();
+  @include recipe-styles();
 }
 .recipe-2 {
   display: none;
@@ -312,9 +358,15 @@ ul {
     display: flex;
     flex-direction: column;
     width: 70%;
+    article {
+      figure{
+        display: flex;
+      }
+    }
   }
   .recipe-2 {
-    @include article-styles();
+    @include column-center();
+    @include recipe-styles();
   }
 
   .network {

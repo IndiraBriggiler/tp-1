@@ -82,14 +82,35 @@ ul li a {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
+iframe {
+  display: none;
+}
+
+.triple-container {
+  margin: 15px;
+}
+
+section {
+  margin: 50px 20px 20px 20px;
+}
+
+.profile-recipes {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .profile {
   font-family: "IBM Plex Mono", monospace;
 }
 .profile figure {
   margin: 0;
   padding: 0;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: auto;
 }
 .profile figure img {
@@ -100,9 +121,15 @@ ul li a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 20px;
+}
+.profile hgroup h1 {
+  font-size: 20px;
+  margin: 10px 0px;
 }
 .profile hgroup h2 {
   color: #808080;
+  font-size: 15px;
 }
 
 .recipes {
@@ -112,10 +139,15 @@ ul li a {
   align-content: center;
   font-family: "IBM Plex Mono", monospace;
 }
+.recipes article figure {
+  display: none;
+}
 .recipes .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   align-content: center;
 }
 .recipes .button {
@@ -123,9 +155,13 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin: 5px;
 }
 .recipes .button input {
   border-radius: 5px;
+  padding: 5px;
+  width: 120px;
+  height: 35px;
   background-color: #ffb6c1;
   border: 1px solid #ffb6c1;
   font-size: 15px;
@@ -134,22 +170,35 @@ ul li a {
 
 .articles-titles {
   font-family: "IBM Plex Mono", monospace;
-  display: flex;
-  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .articles-titles span {
-  width: 80%;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
   background-color: #ffb6c1;
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
+.recipe-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .recipe-1 .article-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #808080;
+  font-size: 15px;
+  margin: 10px 0px;
 }
-.recipe-1 .article-info .date {
+.recipe-1 .article-info .posted {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,8 +210,14 @@ ul li a {
   justify-content: center;
   align-content: center;
 }
+.recipe-1 hgroup h1 {
+  font-size: 20px;
+  margin: 10px 0x;
+}
 .recipe-1 hgroup h2 {
   color: #808080;
+  font-size: 15px;
+  margin: 10px 0x;
 }
 
 .recipe-2 {
@@ -258,13 +313,27 @@ ul li a {
     flex-direction: column;
     width: 70%;
   }
+  .recipes article figure {
+    display: flex;
+  }
 
+  .recipe-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .recipe-2 .article-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #808080;
+    font-size: 15px;
+    margin: 10px 0px;
   }
-  .recipe-2 .article-info .date {
+  .recipe-2 .article-info .posted {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,8 +345,14 @@ ul li a {
     justify-content: center;
     align-content: center;
   }
+  .recipe-2 hgroup h1 {
+    font-size: 20px;
+    margin: 10px 0x;
+  }
   .recipe-2 hgroup h2 {
     color: #808080;
+    font-size: 15px;
+    margin: 10px 0x;
   }
 
   .network {
