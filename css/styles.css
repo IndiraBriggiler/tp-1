@@ -177,13 +177,12 @@ ul li a {
 }
 .networks i {
   color: #808080;
-  margin: 0px;
   width: 30px;
 }
 .networks .network {
-  margin: 20px;
   color: #808080;
   display: none;
+  margin: 20px;
   width: 20px;
 }
 .networks a {
@@ -206,10 +205,6 @@ ul li a {
 }
 
 @media (min-width: 800px) {
-  .arrows {
-    background-color: red;
-  }
-
   ul {
     list-style: none;
     display: flex;
@@ -284,8 +279,17 @@ ul li a {
     color: #808080;
   }
 
-  .network {
+  .networks {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid;
+  }
+  .networks i {
+    margin-top: 40px;
+  }
+  .networks .network {
     display: block;
+    display: contents;
   }
 
   .arrows {

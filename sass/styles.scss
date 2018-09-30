@@ -132,13 +132,7 @@ ul {
   }
 }
 
-
-
-
-
 // estilos desde carousel hasta "newsletter" //
-
-
 
 .profile {
   font-family: $recipes-font;
@@ -203,13 +197,13 @@ ul {
   border-bottom: 1px solid $info-color;
   i {
     color: $info-color;
-    margin: 0px;
+    // margin: 0px;
     width: 30px;
   }
   .network {
-    margin: 20px;
     color: $info-color;
     display: none;
+    margin: 20px;
     width: 20px;
   }
   a {
@@ -232,13 +226,7 @@ ul {
   }
 }
 
-
-
 @media (min-width: 800px) {
-  .arrows{
-      background-color: red;
-  }
-  
   ul {
     list-style: none;
     display: flex;
@@ -320,9 +308,17 @@ ul {
   .recipe-2 {
     @include article-styles();
   }
-
-  .network {
-    display: block;
+  .networks {
+    display: flex; 
+    height: 60px;
+    border-bottom: 1px solid;
+    i {
+      margin-top: 40px;  
+    }
+    .network {
+      display: block;
+      display: contents;
+    }
   }
   .arrows {
     display: none;
