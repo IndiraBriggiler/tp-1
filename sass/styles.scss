@@ -35,6 +35,37 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
+=======
+@mixin recipe-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .article-info {
+    @include jc-space-bt();
+    color: $info-color;
+    font-size: 15px;
+    margin: 10px 0px;
+    .posted {
+      @include column-center();
+    }
+    .social {
+      @include column-center();
+    }
+  }
+  hgroup {
+    h1 {
+      font-size: 20px;
+      margin: 10px 0x;
+    }
+    h2 {
+      color: $info-color;
+      font-size: 15px;
+      margin: 10px 0x;
+    }
+  }
+}
+>>>>>>> 93f850226702875baddde22883d7626addadb22b
 
 * {
   padding: 0;
@@ -115,23 +146,26 @@ ul {
   }
 }
 
+// estilos desde carousel hasta "newsletter" //
 
-img{
+img {
   width: 100%;
 }
-iframe{
+.content-img{
+  display: none;
+}
+iframe {
   display: none;
 }
 
-
 // estilos desde carousel hasta "newsletter" //
-.triple-container{
+.triple-container {
   margin: 15px;
 }
-section{
+section {
   margin: 50px 20px 20px 20px;
 }
-.profile-recipes{
+.profile-recipes {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -152,7 +186,7 @@ section{
     @include column();
     text-align: center;
     margin-top: 20px;
-    h1{
+    h1 {
       font-size: 20px;
       margin: 10px 0px;
     }
@@ -250,13 +284,13 @@ section{
   border-bottom: 1px solid $info-color;
   i {
     color: $info-color;
-    margin: 0px;
+    // margin: 0px;
     width: 30px;
   }
   .network {
-    margin: 20px;
     color: $info-color;
     display: none;
+    margin: 20px;
     width: 20px;
   }
   a {
@@ -279,77 +313,229 @@ section{
   }
 }
 
+@media (min-width: 800px) {
+  nav .mobile  {
+    display: none;
+  }
 
+  header {
+    font-family: "Indie Flower", cursive;
+    color: orange;
+    font-size: 50px;
+    text-align: center;
+  }
 
+<<<<<<< HEAD
 
 @media (min-width: 800px){
   ul {
     list-style: none;
+=======
+  nav {
+    overflow: hidden;
+    .desktop {
+>>>>>>> 93f850226702875baddde22883d7626addadb22b
     display: flex;
-    justify-content: space-around;
-    li {
-      margin: 5px;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: $navbar-color;
-        font-size: 10px;
+      .menu_main {
+        list-style: none;
+        display: flex;
+        width: 100%;
       }
     }
   }
-  .submenu {
-    li {
+  
+  ul{
+    list-style: none;
+  }
+    .menu_main {
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          font-size: 20px;
+          font-family: "IBM Plex Mono", monospace;
+          font-weight: bold;
+          color: #6C6A6A;
+          text-decoration: none;
+          text-align: center;
+        
+        }
+      }
+    }
+    
+    .submenu {
+      list-style: none;
+      position: absolute;
+      background-color: #F8F3F2;
+      width: 250px;
+      height: 250px;
+      margin-top: 10px;
       display: none;
+      margin-left: 10px;
+      // li {
+       
+      //   a {
+      //     text-decoration: none;
+      //     font-family: "IBM Plex Mono", monospace;
+      //     font-size: 20px;
+      //     font-weight: bold;
+      //     color: #6C6A6A;
+        
+      //   }
+      // }
+    }
+
+  .submenu > li > a{
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6C6A6A;
+
+  }
+
+  nav .desktop .menu_main>li:hover, nav .desktop .menu_main>li>.submenu>li:hover {
+      cursor: pointer;
+  }
+
+<<<<<<< HEAD
+=======
+  nav .desktop .menu_main>li:hover>.submenu {
+      display: block;
+  }
+>>>>>>> 93f850226702875baddde22883d7626addadb22b
+
+  nav .desktop .menu_main>li>.submenu>li {
+      padding: 1em;
+  }
+
+
+  .carousel {
+      margin: 0;
+      width: 100%;
+      display: flex;
+  }
+
+  .carousel img {
+      width: 335px;
+      height: 500px;
+      margin: 0%;
+      padding: 1px;
+      justify-content: space-around;
+  }
+
+  .enlaces {
+    display: flex;
+    .recipe-photo {
+      a{
+        text-decoration: none;
+      }
+      img {
+        width: 360px;
+        height: 270px;
+        display: flex;
+        border-radius: 50px;
+        /* position: relative; */
+      figcaption {
+        background-color: white;
+        
+      }
+    button{
+      border-radius: 5px;
+      display: flex;
+      left: 1000px;
+      bottom: 50%;
+      font-family: "IBM Plex Mono", monospace;
+      background-color: #D9560A;
+      border: 0;
+      border-radius: 15px;
+      width: 170px;
+        /* height: 26px;
+        position: absolute;
+          float: center; */
+      }
+      }
     }
   }
 
-  header nav div ul li a:hover {
-    background-color: $info-color;
-  }
+  
 
 
-  .content-img {
+  // --------
+  // ul {
+  //   list-style: none;
+  //   display: flex;
+  //   justify-content: space-around;
+  //   li {
+  //     margin: 5px;
+  //     text-align: center;
+  //     a {
+  //       text-decoration: none;
+  //       color: $navbar-color;
+  //       font-size: 10px;
+  //     }
+  //   }
+  // }
+  // .submenu {
+  //   li {
+  //     display: none;
+  //   }
+  // }
+
+  // header nav div ul li a:hover {
+  //   background-color: $info-color;
+  // }
+
+  // // CHEQUEAR
+  // nav ul.menu li:hover > ul.submenu {
+  //   display: flex;
+  // }
+
+  .image {
     position: relative;
     overflow: hidden;
+    .content-img {
+      background-color: rgba(200, 0, 0, 0);
+      height: 50%;
+      margin: 0;
+      margin-top:100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      span {
+        opacity: 0;
+      }
+      figcaption {
+        opacity: 0;
+      }
+    }
   }
-  // .content-1 {
-  //   width: 600px;
-  //   height: 300px;
-  //   position: absolute;
-  //   background: rgba(219, 71, 12, 0.356);
-  //   top: 0;
-  //   margin-top: 100%;
-  // }
-  .content-img:hover .content-1 {
-    margin-top: 75%;
-    transition: all 300ms;
+
+  .image:hover .content-img {
+    background: rgba(219, 71, 12, 0.356);
   }
-  // .content-txt {
-  //   position: absolute;
-  //   top: 0;
-  //   margin-top: 820px;
-  //   padding: 10px;
-  //   z-index: 10;
-  //   color: $white;
-  // }
-
-  // .content-txt span {
-  //   opacity: 0;
-  //   font-size: 10px;
-  // }
-  // .content-txt figcaption {
-  //   opacity: 0;
-  //   font-family: "IBM Plex Mono", monospace;
-  // }
-
-  .content-img:hover span {
-    opacity: 10;
+  .image:hover .content-img span {
+    opacity: 1;
     transition: all 400ms;
   }
 
-  .content-img:hover figcaption {
-    opacity: 10;
+  .image:hover .content-img figcaption {
+    opacity: 1;
     transition: all 400ms;
+  }
+  .content-img{
+    color: $white;
+    @include column();
+    span{
+      margin: 20px;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+    figcaption{
+      margin: 10px;
+      font-size: 20px;
+      font-family: $recipes-font;
+    }
   }
 
   .triple-container{
@@ -383,6 +569,7 @@ section{
   }
   .recipe-text{
     width: 70%;
+<<<<<<< HEAD
     margin: 20px;
   }
   .article-info {
@@ -406,6 +593,11 @@ section{
       height: 150px;
       img{
         border-radius: 40px;
+=======
+    article {
+      figure {
+        display: flex;
+>>>>>>> 93f850226702875baddde22883d7626addadb22b
       }
     }
   }
@@ -455,8 +647,26 @@ section{
       font-family: $recipes-font;
     }
   }
+<<<<<<< HEAD
   .network {
     display: block;
+=======
+
+
+
+
+
+  
+  .networks {
+    // height: 60px;
+    i {
+      height: 50px;
+    }
+    .network {
+      display: block;
+      display: contents;
+    }
+>>>>>>> 93f850226702875baddde22883d7626addadb22b
   }
   .arrows {
     display: none;
