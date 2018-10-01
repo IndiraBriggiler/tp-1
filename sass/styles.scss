@@ -35,11 +35,16 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
-@mixin article-styles {
+@mixin recipe-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .article-info {
-    @include jc-space-around();
+    @include jc-space-bt();
     color: $info-color;
-    .date {
+    font-size: 15px;
+    margin: 10px 0px;
+    .posted {
       @include column-center();
     }
     .social {
@@ -47,8 +52,14 @@ $hovr-color: #fa906f;
     }
   }
   hgroup {
+    h1 {
+      font-size: 20px;
+      margin: 10px 0x;
+    }
     h2 {
       color: $info-color;
+      font-size: 15px;
+      margin: 10px 0x;
     }
   }
 }
@@ -134,13 +145,34 @@ ul {
 
 // estilos desde carousel hasta "newsletter" //
 
+img {
+  width: 100%;
+}
+.content-img{
+  display: none;
+}
+iframe {
+  display: none;
+}
+
+// estilos desde carousel hasta "newsletter" //
+.triple-container {
+  margin: 15px;
+}
+section {
+  margin: 50px 20px 20px 20px;
+}
+.profile-recipes {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .profile {
   font-family: $recipes-font;
   figure {
     margin: 0;
     padding: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     img {
       width: 100%;
@@ -150,8 +182,14 @@ ul {
   hgroup {
     @include column();
     text-align: center;
+    margin-top: 20px;
+    h1 {
+      font-size: 20px;
+      margin: 10px 0px;
+    }
     h2 {
       color: $info-color;
+      font-size: 15px;
     }
   }
 }
@@ -159,13 +197,24 @@ ul {
 .recipes {
   @include column-center();
   font-family: $recipes-font;
+  article {
+    figure {
+      display: none;
+    }
+  }
   .article {
     @include column-center();
+    align-items: center;
+    align-content: center;
   }
   .button {
     @include column-center();
+    margin: 5px;
     input {
       border-radius: 5px;
+      padding: 5px;
+      width: 120px;
+      height: 35px;
       background-color: $button-color;
       border: 1px solid $button-color;
       font-size: 15px;
@@ -176,16 +225,22 @@ ul {
 
 .articles-titles {
   font-family: $recipes-font;
-  @include jc-center();
+  margin-top: 20px;
+  margin-bottom: 20px;
   span {
-    width: 80%;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
     background-color: $button-color;
-    @include jc-center();
+    @include jc-ac-center();
+    align-items: center;
   }
 }
 
 .recipe-1 {
-  @include article-styles();
+  @include recipe-styles();
 }
 .recipe-2 {
   display: none;
@@ -256,66 +311,77 @@ ul {
     display: flex;
   }
 
-  // .content-img {
-  //   position: relative;
-  //   overflow: hidden;
-  //   width: 600px;
-  //   height: 300px;
-  //   position: absolute;
-  //   background: rgba(219, 71, 12, 0.356);
-  //   top: 0;
-  //   margin-top: 100%;
-  //   .content-img:hover{
-  //     margin-top: 75%;
-  //     transition: all 300ms;
-  //   } 
-    
+  .image {
+    position: relative;
+    overflow: hidden;
+    .content-img {
+      background-color: rgba(200, 0, 0, 0);
+      height: 50%;
+      margin: 0;
+      margin-top:100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      span {
+        opacity: 0;
+      }
+      figcaption {
+        opacity: 0;
+      }
+    }
+  }
 
+  .image:hover .content-img {
+    background: rgba(219, 71, 12, 0.356);
+  }
+  .image:hover .content-img span {
+    opacity: 1;
+    transition: all 400ms;
+  }
 
-  // }
-  
-  // .content-txt {
-  //   position: absolute;
-  //   top: 0;
-  //   margin-top: 820px;
-  //   padding: 10px;
-  //   z-index: 10;
-  //   color: $white;
-  // }
-
-  // .content-txt span {
-  //   opacity: 0;
-  //   font-size: 10px;
-  // }
-  // .content-txt figcaption {
-  //   opacity: 0;
-  //   font-family: "IBM Plex Mono", monospace;
-  // }
-
-  // .content-img:hover span {
-  //   opacity: 10;
-  //   transition: all 400ms;
-  // }
-
-  // .content-img:hover figcaption {
-  //   opacity: 10;
-  //   transition: all 400ms;
-  // }
+  .image:hover .content-img figcaption {
+    opacity: 1;
+    transition: all 400ms;
+  }
+  .content-img{
+    color: $white;
+    @include column();
+    span{
+      margin: 20px;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+    figcaption{
+      margin: 10px;
+      font-size: 20px;
+      font-family: $recipes-font;
+    }
+  }
 
   .recipes {
     display: flex;
     flex-direction: column;
     width: 70%;
+    article {
+      figure {
+        display: flex;
+      }
+    }
   }
   .recipe-2 {
-    @include article-styles();
+    @include column-center();
+    @include recipe-styles();
   }
+
+
+
+
+
+  
   .networks {
-    display: flex; 
-    height: 60px;
-    border-bottom: 1px solid;
+    // height: 60px;
     i {
-      margin-top: 40px;  
+      height: 50px;
     }
     .network {
       display: block;
