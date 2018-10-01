@@ -264,31 +264,120 @@ section {
 }
 
 @media (min-width: 800px) {
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  ul li {
-    margin: 5px;
-    text-align: center;
-  }
-  ul li a {
-    text-decoration: none;
-    color: #666;
-    font-size: 10px;
-  }
-
-  .submenu li {
+  nav .mobile {
     display: none;
   }
 
-  header nav div ul li a:hover {
-    background-color: #808080;
+  header {
+    font-family: "Indie Flower", cursive;
+    color: orange;
+    font-size: 50px;
+    text-align: center;
   }
 
-  nav ul.menu li:hover > ul.submenu {
+  nav {
+    overflow: hidden;
+  }
+  nav .desktop {
     display: flex;
+  }
+  nav .desktop .menu_main {
+    list-style: none;
+    display: flex;
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .menu_main li {
+    width: 100%;
+    text-align: center;
+  }
+  .menu_main li a {
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    color: #6C6A6A;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .submenu {
+    list-style: none;
+    position: absolute;
+    background-color: #F8F3F2;
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    display: none;
+    margin-left: 10px;
+  }
+
+  .submenu > li > a {
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6C6A6A;
+  }
+
+  nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
+    cursor: pointer;
+  }
+
+  nav .desktop .menu_main > li:hover > .submenu {
+    display: block;
+  }
+
+  nav .desktop .menu_main > li > .submenu > li {
+    padding: 1em;
+  }
+
+  .carousel {
+    margin: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .carousel img {
+    width: 335px;
+    height: 500px;
+    margin: 0%;
+    padding: 1px;
+    justify-content: space-around;
+  }
+
+  .enlaces {
+    display: flex;
+  }
+  .enlaces .recipe-photo a {
+    text-decoration: none;
+  }
+  .enlaces .recipe-photo img {
+    width: 360px;
+    height: 270px;
+    display: flex;
+    border-radius: 50px;
+    /* position: relative; */
+  }
+  .enlaces .recipe-photo img figcaption {
+    background-color: white;
+  }
+  .enlaces .recipe-photo img button {
+    border-radius: 5px;
+    display: flex;
+    left: 1000px;
+    bottom: 50%;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #D9560A;
+    border: 0;
+    border-radius: 15px;
+    width: 170px;
+    /* height: 26px;
+    position: absolute;
+      float: center; */
   }
 
   .image {
