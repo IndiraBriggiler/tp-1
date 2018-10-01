@@ -142,22 +142,55 @@ section {
 .recipes article figure {
   display: none;
 }
-.recipes .article {
+
+.recipe-1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.recipe-text .article-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #808080;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.recipe-text .article-info .posted {
+  display: flex;
   justify-content: center;
   align-content: center;
-  align-items: center;
-  align-content: center;
+  width: 180px;
 }
-.recipes .button {
+.recipe-text .article-info .social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80px;
+}
+.recipe-text .article {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+.recipe-text .article .recipe-title {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.recipe-text .article .recipe-presentation {
+  color: #808080;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.recipe-text .button {
+  display: flex;
   justify-content: center;
   align-content: center;
   margin: 5px;
 }
-.recipes .button input {
+.recipe-text .button input {
   border-radius: 5px;
   padding: 5px;
   width: 120px;
@@ -166,6 +199,10 @@ section {
   border: 1px solid #ffb6c1;
   font-size: 15px;
   font-family: "IBM Plex Mono", monospace;
+}
+
+.recipe-2 {
+  display: none;
 }
 
 .articles-titles {
@@ -184,44 +221,6 @@ section {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-.recipe-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.recipe-1 .article-info {
-  display: flex;
-  justify-content: space-between;
-  color: #808080;
-  font-size: 15px;
-  margin: 10px 0px;
-}
-.recipe-1 .article-info .posted {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipe-1 .article-info .social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.recipe-1 hgroup h1 {
-  font-size: 20px;
-  margin: 10px 0x;
-}
-.recipe-1 hgroup h2 {
-  color: #808080;
-  font-size: 15px;
-  margin: 10px 0x;
-}
-
-.recipe-2 {
-  display: none;
 }
 
 .networks {
@@ -284,10 +283,6 @@ section {
     background-color: #808080;
   }
 
-  nav ul.menu li:hover > ul.submenu {
-    display: flex;
-  }
-
   .content-img {
     position: relative;
     overflow: hidden;
@@ -308,51 +303,111 @@ section {
     transition: all 400ms;
   }
 
-  .recipes {
+  .triple-container {
     display: flex;
-    flex-direction: column;
-    width: 70%;
   }
-  .recipes article figure {
+
+  .video {
     display: flex;
+  }
+
+  .recipes {
+    width: 60%;
+  }
+
+  .recipe-1 {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #808080;
+  }
+  .recipe-1 .recipe-image {
+    display: flex;
+    width: 50%;
+    height: 150px;
+  }
+  .recipe-1 .recipe-image img {
+    border-radius: 40px;
+  }
+
+  .recipe-text {
+    width: 70%;
+    margin: 20px;
+  }
+
+  .article-info {
+    width: 100%;
+    color: #808080;
+    font-size: 10px;
+    margin: 10px 0px;
+    display: flex;
+  }
+  .article-info .posted {
+    display: flex;
+    justify-content: start;
   }
 
   .recipe-2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid #808080;
   }
-  .recipe-2 .article-info {
+  .recipe-2 .recipe-image {
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+    height: 150px;
+  }
+  .recipe-2 .recipe-image img {
+    border-radius: 40px;
+  }
+
+  .recipe-text {
+    width: 70%;
+    margin: 20px;
+  }
+  .recipe-text .article-info {
+    width: 100%;
     color: #808080;
-    font-size: 15px;
+    font-size: 10px;
     margin: 10px 0px;
+    display: flex;
   }
-  .recipe-2 .article-info .posted {
+  .recipe-text .article-info .posted {
+    display: flex;
+    justify-content: start;
+  }
+
+  .article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: start;
+    margin: 0px;
   }
-  .recipe-2 .article-info .social {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  .article .recipe-title {
+    font-size: 12px;
+    margin: 5px 20px;
   }
-  .recipe-2 hgroup h1 {
-    font-size: 20px;
-    margin: 10px 0x;
-  }
-  .recipe-2 hgroup h2 {
+  .article .recipe-presentation {
+    text-align: start;
     color: #808080;
-    font-size: 15px;
-    margin: 10px 0x;
+    font-size: 9px;
+    margin: 5px 0px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0px;
+  }
+  .button input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 90px;
+    height: 30px;
+    background-color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    font-size: 10px;
+    font-family: "IBM Plex Mono", monospace;
   }
 
   .network {

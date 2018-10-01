@@ -35,34 +35,6 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
-@mixin recipe-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .article-info {
-    @include jc-space-bt();
-    color: $info-color;
-    font-size: 15px;
-    margin: 10px 0px;
-    .posted {
-      @include column-center();
-    }
-    .social {
-      @include column-center();
-    }
-  }
-  hgroup {
-    h1{
-      font-size: 20px;
-      margin: 10px 0x;
-    }
-    h2 {
-      color: $info-color;
-      font-size: 15px;
-      margin: 10px 0x;
-    }
-  }
-}
 
 * {
   padding: 0;
@@ -199,13 +171,45 @@ section{
       display: none;
     }
   }
+}
+.recipe-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-text{  
+  .article-info {
+    width: 100%;
+    @include jc-space-bt();
+    color: $info-color;
+    font-size: 15px;
+    margin: 10px 0px;
+    .posted {
+      @include jc-ac-center();
+      width: 180px;
+    }
+    .social {
+      @include jc-center();
+      text-align: center;
+      width: 80px;
+    }
+  }  
   .article {
-    @include column-center();
-    align-items: center;
-    align-content: center;
+    @include column();
+    text-align: center;
+    margin-top: 20px;
+    .recipe-title {
+      font-size: 20px;
+      margin: 10px 0px;
+    }
+    .recipe-presentation {
+      color: $info-color;
+      font-size: 15px;
+      margin: 10px 0px;
+    }
   }
   .button {
-    @include column-center();
+    @include jc-ac-center();
     margin: 5px;
     input {
       border-radius: 5px;
@@ -218,6 +222,10 @@ section{
       font-family: $recipes-font;
     }
   }
+}
+
+.recipe-2 {
+  display: none;
 }
 
 .articles-titles {
@@ -234,13 +242,6 @@ section{
     @include jc-ac-center();
     align-items: center;
   }
-}
-
-.recipe-1 {
-  @include recipe-styles();
-}
-.recipe-2 {
-  display: none;
 }
 
 .networks {
@@ -280,7 +281,8 @@ section{
 
 
 
-@media (min-width: 800px) {
+
+@media (min-width: 800px){
   ul {
     list-style: none;
     display: flex;
@@ -305,10 +307,6 @@ section{
     background-color: $info-color;
   }
 
-  // CHEQUEAR
-  nav ul.menu li:hover > ul.submenu {
-    display: flex;
-  }
 
   .content-img {
     position: relative;
@@ -354,25 +352,114 @@ section{
     transition: all 400ms;
   }
 
-  .recipes {
+  .triple-container{
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    article {
-      figure{
-        display: flex;
+  }
+  .video{
+    display: flex;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .recipes {
+    width: 60%;
+  }
+  .recipe-1 { 
+    display: flex; 
+    flex-direction: row; 
+    border-top: 1px solid $info-color;
+    .recipe-image{
+      display: flex;
+      width: 50%;
+      height: 150px;
+      img{
+        border-radius: 40px;
       }
     }
   }
-  .recipe-2 {
-    @include column-center();
-    @include recipe-styles();
+  .recipe-text{
+    width: 70%;
+    margin: 20px;
   }
-
+  .article-info {
+    width: 100%;
+    color: $info-color;
+    font-size: 10px;
+    margin: 10px 0px;
+    display: flex;
+    .posted{
+      display: flex;
+      justify-content: start;
+    }
+  }  
+  .recipe-2 { 
+    display: flex; 
+    flex-direction: row; 
+    border-top: 1px solid $info-color;
+    .recipe-image{
+      display: flex;
+      width: 50%;
+      height: 150px;
+      img{
+        border-radius: 40px;
+      }
+    }
+  }
+  .recipe-text {
+    width: 70%;
+    margin: 20px;
+    .article-info {
+    width: 100%;
+    color: $info-color;
+    font-size: 10px;
+    margin: 10px 0px;
+    display: flex;
+    .posted{
+      display: flex;
+      justify-content: start;
+    }
+    }
+  }  
+  .article {
+    @include column();
+    align-items: start;
+    margin: 0px;
+    .recipe-title{
+      font-size: 12px;
+      margin: 5px 20px;
+    }
+    .recipe-presentation {
+      text-align: start;
+      color: $info-color;
+      font-size: 9px;
+      margin: 5px 0px;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0px;
+    input {
+      border-radius: 5px;
+      padding: 5px;
+      width: 90px;
+      height: 30px;
+      background-color: $button-color;
+      border: 1px solid $button-color;
+      font-size: 10px;
+      font-family: $recipes-font;
+    }
+  }
   .network {
     display: block;
   }
   .arrows {
     display: none;
   }
+
 }
