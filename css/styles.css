@@ -114,7 +114,6 @@ section {
   margin: 0;
   padding: 0;
   width: 250px;
-  height: 250px;
   margin: auto;
 }
 .profile figure img {
@@ -322,9 +321,6 @@ section {
     color: #6C6A6A;
   }
 
-<<<<<<< HEAD
-  .content-img {
-=======
   nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
     cursor: pointer;
   }
@@ -383,7 +379,6 @@ section {
   }
 
   .image {
->>>>>>> 93f850226702875baddde22883d7626addadb22b
     position: relative;
     overflow: hidden;
   }
@@ -417,14 +412,6 @@ section {
     transition: all 400ms;
   }
 
-<<<<<<< HEAD
-  .triple-container {
-    display: flex;
-  }
-
-  .video {
-    display: flex;
-=======
   .content-img {
     color: #ffffff;
     display: flex;
@@ -439,11 +426,48 @@ section {
     margin: 10px;
     font-size: 20px;
     font-family: "IBM Plex Mono", monospace;
->>>>>>> 93f850226702875baddde22883d7626addadb22b
+  }
+
+  .triple-container {
+    display: flex;
+    height: 450px;
+  }
+  .triple-container .video {
+    width: 70%;
+  }
+  .triple-container .video iframe {
+    display: flex;
+    justify-content: start;
+  }
+  .triple-container .profile-recipes {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .articles-titles {
+    margin-top: 0;
+  }
+  .articles-titles span {
+    font-size: 10px;
+    height: 15px;
+  }
+
+  .profile figure {
+    width: 170px;
+  }
+  .profile hgroup {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .profile hgroup h1 {
+    font-size: 13px;
+  }
+  .profile hgroup h2 {
+    font-size: 10px;
   }
 
   .recipes {
-    width: 60%;
+    width: 65%;
   }
 
   .recipe-1 {

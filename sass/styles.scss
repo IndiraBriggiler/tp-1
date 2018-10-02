@@ -35,8 +35,6 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-=======
 @mixin recipe-styles {
   display: flex;
   flex-direction: column;
@@ -65,7 +63,6 @@ $hovr-color: #fa906f;
     }
   }
 }
->>>>>>> 93f850226702875baddde22883d7626addadb22b
 
 * {
   padding: 0;
@@ -175,7 +172,6 @@ section {
     margin: 0;
     padding: 0;
     width: 250px;
-    height: 250px;
     margin: auto;
     img {
       width: 100%;
@@ -325,16 +321,9 @@ section {
     text-align: center;
   }
 
-<<<<<<< HEAD
-
-@media (min-width: 800px){
-  ul {
-    list-style: none;
-=======
   nav {
     overflow: hidden;
     .desktop {
->>>>>>> 93f850226702875baddde22883d7626addadb22b
     display: flex;
       .menu_main {
         list-style: none;
@@ -398,12 +387,9 @@ section {
       cursor: pointer;
   }
 
-<<<<<<< HEAD
-=======
   nav .desktop .menu_main>li:hover>.submenu {
       display: block;
   }
->>>>>>> 93f850226702875baddde22883d7626addadb22b
 
   nav .desktop .menu_main>li>.submenu>li {
       padding: 1em;
@@ -538,21 +524,52 @@ section {
     }
   }
 
+
+
   .triple-container{
     display: flex;
+    height: 450px;
+    .video{
+      width: 70%;
+      iframe{
+        display: flex;
+        justify-content: start;
+      }
+    }
+    .profile-recipes{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+  
   }
-  .video{
-    display: flex;
+
+  .articles-titles{
+    margin-top: 0;
+    span{
+      font-size: 10px;
+      height: 15px;
+    }
   }
-  
-  
-  
-  
-  
-  
-  
+
+  .profile{
+    figure{
+      width: 170px;
+    }
+    hgroup{
+      margin-top: 0;
+      margin-bottom: 10px;
+      h1{
+        font-size: 13px;
+      }
+      h2{
+        font-size: 10px;
+      }
+    }
+  }
+    
   .recipes {
-    width: 60%;
+    width: 65%;
   }
   .recipe-1 { 
     display: flex; 
@@ -569,7 +586,6 @@ section {
   }
   .recipe-text{
     width: 70%;
-<<<<<<< HEAD
     margin: 20px;
   }
   .article-info {
@@ -593,11 +609,6 @@ section {
       height: 150px;
       img{
         border-radius: 40px;
-=======
-    article {
-      figure {
-        display: flex;
->>>>>>> 93f850226702875baddde22883d7626addadb22b
       }
     }
   }
@@ -647,10 +658,6 @@ section {
       font-family: $recipes-font;
     }
   }
-<<<<<<< HEAD
-  .network {
-    display: block;
-=======
 
 
 
@@ -666,7 +673,6 @@ section {
       display: block;
       display: contents;
     }
->>>>>>> 93f850226702875baddde22883d7626addadb22b
   }
   .arrows {
     display: none;
