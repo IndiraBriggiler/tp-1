@@ -23,9 +23,6 @@ header nav {
   font-family: "IBM Plex Mono", monospace;
 }
 
-nav .desktop {
-  display: none;
-}
 nav .mobile {
   width: 500px;
   height: 30px;
@@ -369,13 +366,10 @@ section {
     text-align: center;
   }
 
-  nav {
-    overflow: hidden;
+  .desktop {
+    display: block;
   }
-  nav .desktop {
-    display: flex;
-  }
-  nav .desktop .menu_main {
+  .desktop .menu_main {
     list-style: none;
     display: flex;
     width: 100%;
@@ -402,11 +396,11 @@ section {
     list-style: none;
     position: absolute;
     background-color: #F8F3F2;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin-top: 10px;
     display: none;
-    margin-left: 10px;
+    margin-left: 40px;
   }
 
   .submenu > li > a {
@@ -423,10 +417,6 @@ section {
 
   nav .desktop .menu_main > li:hover > .submenu {
     display: block;
-  }
-
-  nav .desktop .menu_main > li > .submenu > li {
-    padding: 1em;
   }
 
   .carousel {
@@ -446,32 +436,43 @@ section {
   .enlaces {
     display: flex;
   }
-  .enlaces .recipe-photo a {
-    text-decoration: none;
-  }
-  .enlaces .recipe-photo img {
-    width: 360px;
-    height: 270px;
+  .enlaces .recipe_photo {
     display: flex;
+  }
+  .enlaces .recipe_photo a {
+    text-decoration: none;
+    display: flex;
+  }
+  .enlaces .recipe_photo a .img_platos {
+    width: 380px;
+    height: 270px;
     border-radius: 50px;
-    /* position: relative; */
+    padding: 5px;
+    position: relative;
+    left: 40px;
   }
-  .enlaces .recipe-photo img figcaption {
-    background-color: white;
+  .enlaces .recipe_photo .img_recetas {
+    width: 380px;
+    height: 270px;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    left: 60px;
   }
-  .enlaces .recipe-photo img button {
+
+  button {
     border-radius: 5px;
     display: flex;
-    left: 1000px;
+    right: 100px;
     bottom: 50%;
     font-family: "IBM Plex Mono", monospace;
     background-color: #D9560A;
     border: 0;
     border-radius: 15px;
     width: 170px;
-    /* height: 26px;
+    height: 26px;
     position: absolute;
-      float: center; */
+    float: center;
   }
 
   .image {
