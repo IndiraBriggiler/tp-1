@@ -156,6 +156,10 @@ iframe {
 }
 
 // estilos desde carousel hasta "newsletter" //
+.recipes-main-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
 .triple-container {
   margin: 15px;
 }
