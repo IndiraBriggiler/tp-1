@@ -35,35 +35,6 @@ $hovr-color: #fa906f;
   display: flex;
   justify-content: space-between;
 }
-@mixin recipe-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .article-info {
-    @include jc-space-bt();
-    color: $info-color;
-    font-size: 15px;
-    margin: 10px 0px;
-    .posted {
-      @include column-center();
-    }
-    .social {
-      @include column-center();
-    }
-  }
-  hgroup {
-    h1 {
-      font-size: 20px;
-      margin: 10px 0x;
-    }
-    h2 {
-      color: $info-color;
-      font-size: 15px;
-      margin: 10px 0x;
-    }
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -211,23 +182,21 @@ section {
   flex-direction: column;
   align-items: center;
 }
-.recipe-text{  
-  .article-info {
-    width: 100%;
-    @include jc-space-bt();
-    color: $info-color;
-    font-size: 15px;
-    margin: 10px 0px;
-    .posted {
-      @include jc-ac-center();
-      width: 180px;
-    }
-    .social {
-      @include jc-center();
-      text-align: center;
-      width: 80px;
-    }
-  }  
+.article-info {
+  width: 100%;
+  @include jc-space-bt();
+  color: $info-color;
+  font-size: 15px;
+  margin: 10px 0px;
+  .posted {
+    @include jc-ac-center();
+    width: 180px;
+  }
+  .social {
+    @include jc-center();
+    text-align: center;
+    width: 80px;
+  } 
   .article {
     @include column();
     text-align: center;
@@ -458,17 +427,6 @@ section {
       margin-top: 10px;
       display: none;
       margin-left: 10px;
-      // li {
-       
-      //   a {
-      //     text-decoration: none;
-      //     font-family: "IBM Plex Mono", monospace;
-      //     font-size: 20px;
-      //     font-weight: bold;
-      //     color: #6C6A6A;
-        
-      //   }
-      // }
     }
 
   .submenu > li > a{
@@ -507,7 +465,7 @@ section {
       justify-content: space-around;
   }
   .web-body{
-    margin: 0px; 50px;
+    margin: 0px 100px;
   }
   .enlaces {
     display: flex;
@@ -542,39 +500,6 @@ section {
       }
     }
   }
-
-  
-
-
-  // --------
-  // ul {
-  //   list-style: none;
-  //   display: flex;
-  //   justify-content: space-around;
-  //   li {
-  //     margin: 5px;
-  //     text-align: center;
-  //     a {
-  //       text-decoration: none;
-  //       color: $navbar-color;
-  //       font-size: 10px;
-  //     }
-  //   }
-  // }
-  // .submenu {
-  //   li {
-  //     display: none;
-  //   }
-  // }
-
-  // header nav div ul li a:hover {
-  //   background-color: $info-color;
-  // }
-
-  // // CHEQUEAR
-  // nav ul.menu li:hover > ul.submenu {
-  //   display: flex;
-  // }
 
   .image {
     position: relative;
@@ -637,6 +562,12 @@ section {
         display: flex;
         justify-content: start;
       }
+      .video-info{
+        color: $info-color;
+        font-size: 10px;
+        font-family: $recipes-font;
+        padding: 5px 0px;
+      }
     }
     .profile-recipes{
       display: flex;
@@ -655,6 +586,7 @@ section {
   }
 
   .profile{
+    width: 300px;
     figure{
       width: 170px;
     }
@@ -705,6 +637,7 @@ section {
     display: flex; 
     flex-direction: row; 
     border-top: 1px solid $info-color;
+    align-items: center;
     .recipe-image{
       display: flex;
       width: 50%;
