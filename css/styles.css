@@ -354,11 +354,12 @@ section {
   margin-right: 10px;
 }
 
+/* ---Lourdes Rosales--- */
 @media (min-width: 800px) {
   nav .mobile {
     display: none;
   }
-
+ 
   h1 {
     font-family: "Indie Flower", cursive;
     color: orange;
@@ -367,7 +368,7 @@ section {
     margin: 0%;
     padding: 0%;
   }
-
+ 
   .desktop {
     display: block;
   }
@@ -376,12 +377,12 @@ section {
     display: flex;
     width: 100%;
   }
-
+ 
   ul {
     list-style: none;
   }
-
-  .menu_main li {
+ 
+ .menu_main li {
     width: 100%;
     text-align: center;
   }
@@ -393,7 +394,7 @@ section {
     text-decoration: none;
     text-align: center;
   }
-
+ 
   .submenu {
     list-style: none;
     position: absolute;
@@ -409,21 +410,20 @@ section {
       color: #6C6A6A;
     } */
   }
-
-  nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
+ nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
     cursor: pointer;
   }
-
+ 
   nav .desktop .menu_main > li:hover > .submenu {
     display: block;
   }
-
+ 
   .carousel {
     margin: 0;
     width: 100%;
     display: flex;
   }
-
+ 
   .carousel img {
     width: 335px;
     height: 500px;
@@ -431,41 +431,61 @@ section {
     padding: 1px;
     justify-content: space-around;
   }
-
+ 
   .web-body {
-    margin: 0px 100px;
+    margin: 0px 50px;
   }
-
-  .enlaces {
+ .enlaces {
     display: flex;
   }
-  .enlaces .recipe-photo a {
+  .enlaces .recipe_photo {
+    display: flex;
+    position: relative;
+  }
+  .enlaces .recipe_photo a {
     text-decoration: none;
-  }
-  .enlaces .recipe-photo img {
-    width: 360px;
-    height: 270px;
     display: flex;
+  }
+  .enlaces .recipe_photo a .img_platos {
+    width: 380px;
+    height: 260px;
     border-radius: 50px;
-    /* position: relative; */
+    padding: 5px;
+    position: relative;
+    left: 40px;
   }
-  .enlaces .recipe-photo img figcaption {
-    background-color: white;
-  }
-  .enlaces .recipe-photo img button {
-    border-radius: 5px;
-    display: flex;
-    left: 1000px;
-    bottom: 50%;
+  .enlaces .recipe_photo figcaption {
     font-family: "IBM Plex Mono", monospace;
-    background-color: #D9560A;
+    background-color: white;
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+    left: 155px;
+    top: 130px;
+    border-radius: 15px;
+    width: 170px;
+    height: 25px;
+  }
+  .enlaces .recipe_photo .img_recetas {
+    width: 380px;
+    height: 260px;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    left: 60px;
+  }
+  .enlaces .boton_desktop {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #EF742D;
     border: 0;
     border-radius: 15px;
     width: 170px;
-    /* height: 26px;
+    height: 30px;
     position: absolute;
-      float: center; */
+    left: 1000px;
+    top: 785px;
   }
+/* ---fin--- */
 
   .image {
     position: relative;
