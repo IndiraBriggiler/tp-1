@@ -76,7 +76,7 @@ header {
   h1 {
     color: $title-color;
     font-family: $title-font;
-    font-size: 30px;
+    font-size: 50px;
   }
   nav {
     font-family: $recipes-font;
@@ -156,6 +156,10 @@ iframe {
 }
 
 // estilos desde carousel hasta "newsletter" //
+// .recipes-main-container{
+//   display: flex;
+//   flex-direction: column-reverse;
+// }
 .triple-container {
   margin: 15px;
 }
@@ -407,11 +411,13 @@ section {
     display: none;
   }
 
-  header {
+  h1 {
     font-family: "Indie Flower", cursive;
     color: orange;
     font-size: 50px;
     text-align: center;
+    margin: 0%;
+    padding: 0%;
   }
 
   .desktop {
@@ -439,28 +445,28 @@ section {
         color: #6C6A6A;
         text-decoration: none;
         text-align: center;
-        
       }
     }
   }
     
-    .submenu {
-      list-style: none;
-      position: absolute;
-      background-color: #F8F3F2;
-      width: 200px;
-      height: 200px;
-      margin-top: 10px;
-      display: none;
-      margin-left: 40px;
+  .submenu {
+    list-style: none;
+    position: absolute;
+    background-color: #F8F3F2;
+    width: 200px;
+    height: 150px;
+    display: none;
+    margin-left: 60px;
+    margin-top: 0%;
+    left: 1200px;
+    top: 750px;
+    .submenu li> a {
+      text-decoration: none;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 20px;
+      font-weight: bold;
+      color: #6C6A6A;
     }
-
-  .submenu > li > a {
-    text-decoration: none;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 20px;
-    font-weight: bold;
-    color: #6C6A6A;
   }
 
   nav .desktop .menu_main>li:hover, nav .desktop .menu_main>li>.submenu>li:hover {
@@ -477,14 +483,18 @@ section {
       display: flex;
   }
 
-  .carousel img {
+    .carousel img {
       width: 335px;
       height: 500px;
       margin: 0%;
       padding: 1px;
       justify-content: space-around;
-  }
+    }
+  
 
+  .web-body{
+    margin: 0px 50px;
+  }
   .enlaces {
     display: flex;
     .recipe_photo {
@@ -494,42 +504,46 @@ section {
         display: flex;
         .img_platos {
           width: 380px;
-          height: 270px;
+          height: 260px;
           border-radius: 50px;
           padding: 5px;
           position: relative;
           left: 40px;
         }
       }
+
+      figcaption {
+        font-family: "IBM Plex Mono", monospace;
+        background-color: white;
+        border: 0;
+        border-radius: 15px;
+        width: 170px;
+        height: 30px;
+        
+      }
+    
       .img_recetas {
         width: 380px;
-        height: 270px;
+        height: 260px;
         padding: 5px;
         border-radius: 50px;
         position: relative;
         left: 60px;
       }
-      // figcaption {
-      //   background-color: white;
-      // }
+
+    }
+    .boton_desktop {
+      font-family: "IBM Plex Mono", monospace;
+      background-color: #EF742D;
+      border: 0;
+      border-radius: 15px;
+      width: 170px;
+      height: 30px;
+      position: absolute;
+      left: 1200px;
+      top: 750px;
     }
   }
-
-  button{
-    border-radius: 5px;
-    display: flex;
-    right: 100px;
-    bottom: 50%;
-    font-family: "IBM Plex Mono", monospace;
-    background-color: #D9560A;
-    border: 0;
-    border-radius: 15px;
-    width: 170px;
-    height: 26px;
-    position: absolute;
-    float: center;
-    }
-
 
   .image {
     position: relative;
@@ -579,7 +593,10 @@ section {
   }
 
 
-
+  .recipes-main-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .triple-container{
     display: flex;
     height: 450px;
