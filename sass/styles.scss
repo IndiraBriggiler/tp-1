@@ -59,7 +59,7 @@ nav {
     // display: none;
   }
   .mobile {
-    width: 500px;
+    width: 100%;
     height: 30px;
     background-color: $title-color;
     border-radius: 5px;
@@ -120,16 +120,19 @@ img {
   width: 100%;
 }
 .carousel{
- figure{
-   display: none;
- }
-}
-.content-img{
-  display: none;
+  .image{
+    .content-img{
+      display: none;
+    }
+  }        
+  .carousel-image-desktop{
+    display: none;
+  }
 }
 .video {
-  display: none;
+    display: none;
 }
+
 
 // estilos desde carousel hasta "newsletter" //
 // .recipes-main-container{
