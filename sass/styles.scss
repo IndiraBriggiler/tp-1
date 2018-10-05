@@ -398,19 +398,17 @@ section {
 }
 
 @media (min-width: 800px) {
-  header {
-    h1 {
-      font-family: "Indie Flower", cursive;
-      color: orange;
-      font-size: 50px;
-      text-align: center;
-      margin: 0%;
-      padding: 0%;
+
+ nav  .mobile  {
+    display: none;
+  }
+  .carousel{
+    .carousel-image-desktop{
+      display: block;
     }
   }
-
-  .mobile  {
-    display: none;
+  .carousel-image-desktop{
+    display: block;
   }
 
   .blog-title {
@@ -475,7 +473,7 @@ section {
   .web-body{
     margin: 0px 50px;
   }
-  
+
   .enlaces {
     display: flex;
     .recipe_photo {
@@ -509,7 +507,7 @@ section {
         border: 0;
         border-radius: 15px;
         width: 170px;
-        height: 23px;
+        height: 25px;
         padding-top: 3px;
         margin-left: 170px;
         margin-top: 100px;
