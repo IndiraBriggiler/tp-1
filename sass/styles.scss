@@ -397,6 +397,14 @@ section {
  nav  .mobile  {
     display: none;
   }
+  .carousel{
+    .carousel-image-desktop{
+      display: block;
+    }
+  }
+  .carousel-image-desktop{
+    display: block;
+  }
 
   .blog-title {
     font-family: "Indie Flower", cursive;
