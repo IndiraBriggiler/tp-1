@@ -37,7 +37,7 @@ nav .mobile {
   align-items: center;
 }
 nav .mobile ul {
-  height: 15px;
+  height: 40px;
   display: flex;
   list-style: none;
 }
