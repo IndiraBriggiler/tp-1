@@ -119,20 +119,19 @@ ul {
 img {
   width: 100%;
 }
-.carousel{
-  .image{
-    .content-img{
+.carousel {
+  .image {
+    .content-img {
       display: none;
     }
-  }        
-  .carousel-image-desktop{
+  }
+  .carousel-image-desktop {
     display: none;
   }
 }
 .video {
-    display: none;
+  display: none;
 }
-
 
 // estilos desde carousel hasta "newsletter" //
 // .recipes-main-container{
@@ -234,7 +233,6 @@ section {
     font-family: $recipes-font;
   }
 }
-
 
 .recipe-2 {
   display: none;
@@ -364,15 +362,16 @@ section {
   font-family: $recipes-font;
   font-size: 22px;
   color: black;
- }
- .pionono-presentation {
+}
+.pionono-presentation {
   font-size: 18px;
- }
+}
 
 .quote {
   border-left: $title-color solid 2px;
   margin: 20px 0px;
-  p, span {
+  p,
+  span {
     margin-left: 15px;
   }
   p {
@@ -386,23 +385,22 @@ section {
 .ingredients {
   color: gray;
   ::before {
-      content: "•";
-      color: $title-color;
-      margin-right: 10px;
+    content: "•";
+    color: $title-color;
+    margin-right: 10px;
   }
 }
 
 @media (min-width: 800px) {
-
- nav  .mobile  {
+  nav .mobile {
     display: none;
   }
-  .carousel{
-    .carousel-image-desktop{
+  .carousel {
+    .carousel-image-desktop {
       display: block;
     }
   }
-  .carousel-image-desktop{
+  .carousel-image-desktop {
     display: block;
   }
 
@@ -425,31 +423,31 @@ section {
       font-size: 20px;
       font-family: "IBM Plex Mono", monospace;
       font-weight: bold;
-      color: #6C6A6A;
+      color: #6c6a6a;
       text-decoration: none;
       text-align: center;
-        .platos {
-          position: relative;
-          &:hover .submenu{
-            justify-content: space-between;
-            display: flex;
-            text-align: center;
-            cursor: pointer;
-          }
-          .submenu {
-            align-content: center;
-            display: none;
-            flex-direction: column;
-            list-style: none;
-            position: absolute;
-            background-color: #F8F3F2;
-            width: 180px;
-            height: 130px;
-            margin-top: 0%;
-            margin-left: 0%;
-            z-index: 1;
-          }
+      .platos {
+        position: relative;
+        &:hover .submenu {
+          justify-content: space-between;
+          display: flex;
+          text-align: center;
+          cursor: pointer;
         }
+        .submenu {
+          align-content: center;
+          display: none;
+          flex-direction: column;
+          list-style: none;
+          position: absolute;
+          background-color: #f8f3f2;
+          width: 180px;
+          height: 130px;
+          margin-top: 0%;
+          margin-left: 0%;
+          z-index: 1;
+        }
+      }
     }
   }
   .carousel {
@@ -457,15 +455,15 @@ section {
     width: 100%;
     display: flex;
     img {
-    width: 335px;
-    height: 500px;
-    margin: 0%;
-    padding: 1px;
-    @include jc-space-around;
+      width: 335px;
+      height: 500px;
+      margin: 0%;
+      padding: 1px;
+      @include jc-space-around;
     }
   }
 
-  .web-body{
+  .web-body {
     margin: 0px 50px;
   }
 
@@ -510,7 +508,7 @@ section {
     }
     .boton_desktop {
       font-family: "IBM Plex Mono", monospace;
-      background-color: #EF742D;
+      background-color: #ef742d;
       border: 0;
       border-radius: 15px;
       width: 170px;
@@ -520,7 +518,6 @@ section {
       top: 750px;
     }
   }
-
   .image {
     position: relative;
     overflow: hidden;
@@ -528,7 +525,7 @@ section {
       background-color: rgba(200, 0, 0, 0);
       height: 50%;
       margin: 0;
-      margin-top:100%;
+      margin-top: 100%;
       position: absolute;
       top: 0;
       width: 100%;
@@ -543,6 +540,7 @@ section {
 
   .image:hover .content-img {
     background: rgba(219, 71, 12, 0.356);
+    display: block;
   }
   .image:hover .content-img span {
     opacity: 1;
@@ -553,90 +551,87 @@ section {
     opacity: 1;
     transition: all 400ms;
   }
-  .content-img{
+  .content-img {
     color: $white;
     @include column();
-    span{
+    span {
       margin: 20px;
       font-size: 15px;
       margin-top: 40px;
     }
-    figcaption{
+    figcaption {
       margin: 10px;
       font-size: 20px;
       font-family: $recipes-font;
     }
   }
 
-
-  .recipes-main-container{
+  .recipes-main-container {
     display: flex;
     flex-direction: column-reverse;
   }
-  .triple-container{
+  .triple-container {
     display: flex;
     height: 450px;
-    .video{
+    .video {
       width: 70%;
       @include column();
       justify-content: start;
-      .video-info{
+      .video-info {
         color: $info-color;
         font-size: 10px;
         font-family: $recipes-font;
         padding: 5px 0px;
       }
     }
-    .profile-recipes{
+    .profile-recipes {
       display: flex;
       flex-direction: row-reverse;
     }
-  
-  
   }
 
-  .articles-titles{
+  .articles-titles {
     margin-top: 0;
-    span{
+    span {
       font-size: 10px;
       height: 15px;
     }
   }
 
-  .profile{
+  .profile {
     width: 300px;
-    figure{
+    figure {
       width: 170px;
     }
-    hgroup{
+    hgroup {
       margin-top: 0;
       margin-bottom: 10px;
-      h1{
+      h1 {
         font-size: 13px;
       }
-      h2{
+      h2 {
         font-size: 10px;
       }
     }
   }
-    
+
   .recipes {
     width: 65%;
   }
-  .recipe-1 { 
-    display: flex; 
-    flex-direction: row; 
+  .recipe-1 {
+    display: flex;
+    flex-direction: row;
     border-top: 1px solid $info-color;
-    .recipe-image{
+    .recipe-image {
       display: flex;
       width: 50%;
       height: 150px;
-      img{
+      img {
         border-radius: 40px;
       }
     }
   }
-  .recipe-text{
+  .recipe-text {
     width: 70%;
     margin: 20px;
   }
@@ -646,21 +641,21 @@ section {
     font-size: 10px;
     margin: 10px 0px;
     display: flex;
-    .posted{
+    .posted {
       display: flex;
       justify-content: start;
     }
-  }  
-  .recipe-2 { 
-    display: flex; 
-    flex-direction: row; 
+  }
+  .recipe-2 {
+    display: flex;
+    flex-direction: row;
     border-top: 1px solid $info-color;
     align-items: center;
-    .recipe-image{
+    .recipe-image {
       display: flex;
       width: 50%;
       height: 150px;
-      img{
+      img {
         border-radius: 40px;
       }
     }
@@ -669,22 +664,22 @@ section {
     width: 70%;
     margin: 20px;
     .article-info {
-    width: 100%;
-    color: $info-color;
-    font-size: 10px;
-    margin: 10px 0px;
-    display: flex;
-    .posted{
+      width: 100%;
+      color: $info-color;
+      font-size: 10px;
+      margin: 10px 0px;
       display: flex;
-      justify-content: start;
+      .posted {
+        display: flex;
+        justify-content: start;
+      }
     }
-    }
-  }  
+  }
   .article {
     @include column();
     align-items: start;
     margin: 0px;
-    .recipe-title{
+    .recipe-title {
       font-size: 12px;
       margin: 5px 20px;
     }
@@ -712,11 +707,6 @@ section {
     }
   }
 
-
-
-
-
-  
   .networks {
     // height: 60px;
     i {
@@ -730,7 +720,7 @@ section {
   .arrows {
     display: none;
   }
-// receta //
+  // receta //
   .breadcrumbs {
     width: 30%;
   }
@@ -748,5 +738,4 @@ section {
       width: auto;
     }
   }
-
 }
