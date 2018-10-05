@@ -173,28 +173,30 @@ section {
   text-align: center;
   width: 80px;
 }
-.article-info .article {
+
+.article {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 20px;
 }
-.article-info .article .recipe-title {
+.article .recipe-title {
   font-size: 20px;
   margin: 10px 0px;
 }
-.article-info .article .recipe-presentation {
+.article .recipe-presentation {
   color: #808080;
   font-size: 15px;
   margin: 10px 0px;
 }
-.article-info .button {
+
+.button {
   display: flex;
   justify-content: center;
   align-content: center;
   margin: 5px;
 }
-.article-info .button input {
+.button input {
   border-radius: 5px;
   padding: 5px;
   width: 120px;
@@ -332,6 +334,16 @@ section {
 
 .pionono img {
   border-radius: 15%;
+}
+
+.pionono-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 22px;
+  color: black;
+}
+
+.pionono-presentation {
+  font-size: 18px;
 }
 
 .quote {

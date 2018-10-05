@@ -204,36 +204,37 @@ section {
     @include jc-center();
     text-align: center;
     width: 80px;
-  } 
-  .article {
-    @include column();
-    text-align: center;
-    margin-top: 20px;
-    .recipe-title {
-      font-size: 20px;
-      margin: 10px 0px;
-    }
-    .recipe-presentation {
-      color: $info-color;
-      font-size: 15px;
-      margin: 10px 0px;
-    }
-  }
-  .button {
-    @include jc-ac-center();
-    margin: 5px;
-    input {
-      border-radius: 5px;
-      padding: 5px;
-      width: 120px;
-      height: 35px;
-      background-color: $button-color;
-      border: 1px solid $button-color;
-      font-size: 15px;
-      font-family: $recipes-font;
-    }
   }
 }
+.article {
+  @include column();
+  text-align: center;
+  margin-top: 20px;
+  .recipe-title {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .recipe-presentation {
+    color: $info-color;
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+}
+.button {
+  @include jc-ac-center();
+  margin: 5px;
+  input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 120px;
+    height: 35px;
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    font-size: 15px;
+    font-family: $recipes-font;
+  }
+}
+
 
 .recipe-2 {
   display: none;
