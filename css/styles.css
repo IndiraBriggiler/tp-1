@@ -24,10 +24,7 @@ header nav {
 }
 
 nav .mobile {
-<<<<<<< HEAD
-=======
   width: 100%;
->>>>>>> 0fb7644f1b7fbcc02e70b1629fb36beb1018e962
   height: 30px;
   background-color: #fc784f;
   border-radius: 5px;
@@ -337,6 +334,16 @@ section {
   border-radius: 15%;
 }
 
+.pionono-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 22px;
+  color: black;
+}
+
+.pionono-presentation {
+  font-size: 18px;
+}
+
 .quote {
   border-left: #fc784f solid 2px;
   margin: 20px 0px;
@@ -363,6 +370,14 @@ section {
 @media (min-width: 800px) {
   nav .mobile {
     display: none;
+  }
+
+  .carousel .carousel-image-desktop {
+    display: block;
+  }
+
+  .carousel-image-desktop {
+    display: block;
   }
 
   .blog-title {

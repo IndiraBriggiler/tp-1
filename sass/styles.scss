@@ -59,11 +59,7 @@ nav {
     // display: none;
   }
   .mobile {
-<<<<<<< HEAD
-    // width: 500px;
-=======
     width: 100%;
->>>>>>> 0fb7644f1b7fbcc02e70b1629fb36beb1018e962
     height: 30px;
     background-color: $title-color;
     border-radius: 5px;
@@ -398,6 +394,14 @@ section {
 @media (min-width: 800px) {
   nav .mobile  {
     display: none;
+  }
+  .carousel{
+    .carousel-image-desktop{
+      display: block;
+    }
+  }
+  .carousel-image-desktop{
+    display: block;
   }
 
   .blog-title {
