@@ -41,6 +41,9 @@ $hovr-color: #fa906f;
 }
 body {
   margin: 0;
+  .web-body{
+    margin: 0px 20px;
+  }
 }
 header {
   @include column-center();
@@ -138,6 +141,11 @@ img {
 //   display: flex;
 //   flex-direction: column-reverse;
 // }
+
+.video-profile-recipes {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .triple-container {
   margin: 15px;
 }
@@ -255,7 +263,7 @@ section {
 }
 
 .networks {
-  @include jc-space-around();
+  @include jc-space-bt();
   height: 40px;
   border-bottom: 1px solid $info-color;
   i {
@@ -392,7 +400,17 @@ section {
 }
 
 @media (min-width: 800px) {
+<<<<<<< HEAD
   nav .mobile {
+=======
+  body .web-body{
+    margin: 0px 50px;
+    .video-profile-recipes{
+      @include column();
+    }
+  }
+ nav  .mobile  {
+>>>>>>> 34e5ce36d5f27c11e6a7b1004cbaae50752ae274
     display: none;
   }
   .carousel {
@@ -463,9 +481,12 @@ section {
     }
   }
 
+<<<<<<< HEAD
   .web-body {
     margin: 0px 50px;
   }
+=======
+>>>>>>> 34e5ce36d5f27c11e6a7b1004cbaae50752ae274
 
   .enlaces {
     display: flex;
@@ -565,12 +586,16 @@ section {
       font-family: $recipes-font;
     }
   }
+<<<<<<< HEAD
 
   .recipes-main-container {
     display: flex;
     flex-direction: column-reverse;
   }
   .triple-container {
+=======
+  .triple-container{
+>>>>>>> 34e5ce36d5f27c11e6a7b1004cbaae50752ae274
     display: flex;
     height: 450px;
     .video {
@@ -707,20 +732,41 @@ section {
     }
   }
 
+<<<<<<< HEAD
   .networks {
     // height: 60px;
     i {
       height: 50px;
+=======
+
+
+
+  footer{
+  margin: 0;
+    .networks {
+      // height: 60px;
+      i {
+        height: 50px;
+      }
+      .network {
+        display: block;
+        display: contents;
+      }
+>>>>>>> 34e5ce36d5f27c11e6a7b1004cbaae50752ae274
     }
-    .network {
-      display: block;
-      display: contents;
+    .arrows {
+      display: none;
     }
+<<<<<<< HEAD
   }
   .arrows {
     display: none;
   }
   // receta //
+=======
+  } 
+// receta //
+>>>>>>> 34e5ce36d5f27c11e6a7b1004cbaae50752ae274
   .breadcrumbs {
     width: 30%;
   }

@@ -7,6 +7,9 @@
 body {
   margin: 0;
 }
+body .web-body {
+  margin: 0px 20px;
+}
 
 header {
   display: flex;
@@ -93,6 +96,11 @@ img {
 
 .video {
   display: none;
+}
+
+.video-profile-recipes {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .triple-container {
@@ -231,7 +239,7 @@ section {
 
 .networks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 40px;
   border-bottom: 1px solid #808080;
 }
@@ -371,6 +379,14 @@ section {
 }
 
 @media (min-width: 800px) {
+  body .web-body {
+    margin: 0px 50px;
+  }
+  body .web-body .video-profile-recipes {
+    display: flex;
+    flex-direction: column;
+  }
+
   nav .mobile {
     display: none;
   }
@@ -442,10 +458,6 @@ section {
     padding: 1px;
     display: flex;
     justify-content: space-around;
-  }
-
-  .web-body {
-    margin: 0px 50px;
   }
 
   .enlaces {
@@ -549,11 +561,6 @@ section {
     margin: 10px;
     font-size: 20px;
     font-family: "IBM Plex Mono", monospace;
-  }
-
-  .recipes-main-container {
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .triple-container {
@@ -702,15 +709,17 @@ section {
     font-family: "IBM Plex Mono", monospace;
   }
 
-  .networks i {
+  footer {
+    margin: 0;
+  }
+  footer .networks i {
     height: 50px;
   }
-  .networks .network {
+  footer .networks .network {
     display: block;
     display: contents;
   }
-
-  .arrows {
+  footer .arrows {
     display: none;
   }
 
