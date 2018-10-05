@@ -84,6 +84,10 @@ img {
   width: 100%;
 }
 
+.carousel figure {
+  display: none;
+}
+
 .content-img {
   display: none;
 }
@@ -354,7 +358,6 @@ section {
   margin-right: 10px;
 }
 
-/* ---Lourdes Rosales--- */
 @media (min-width: 800px) {
   nav .mobile {
     display: none;
@@ -368,7 +371,7 @@ section {
     margin: 0%;
     padding: 0%;
   }
- 
+
   .desktop {
     display: block;
   }
@@ -377,12 +380,12 @@ section {
     display: flex;
     width: 100%;
   }
- 
+
   ul {
     list-style: none;
   }
- 
- .menu_main li {
+
+  .menu_main li {
     width: 100%;
     text-align: center;
   }
@@ -394,7 +397,7 @@ section {
     text-decoration: none;
     text-align: center;
   }
- 
+
   .submenu {
     list-style: none;
     position: absolute;
@@ -414,20 +417,21 @@ section {
     font-weight: bold;
     color: #6C6A6A;
   }
- nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
+
+  nav .desktop .menu_main > li:hover, nav .desktop .menu_main > li > .submenu > li:hover {
     cursor: pointer;
   }
- 
+
   nav .desktop .menu_main > li:hover > .submenu {
     display: block;
   }
- 
+
   .carousel {
     margin: 0;
     width: 100%;
     display: flex;
   }
- 
+
   .carousel img {
     width: 335px;
     height: 500px;
@@ -435,16 +439,16 @@ section {
     padding: 1px;
     justify-content: space-around;
   }
- 
+
   .web-body {
     margin: 0px 50px;
   }
- .enlaces {
+
+  .enlaces {
     display: flex;
   }
   .enlaces .recipe_photo {
     display: flex;
-    position: relative;
   }
   .enlaces .recipe_photo a {
     text-decoration: none;
@@ -461,14 +465,10 @@ section {
   .enlaces .recipe_photo figcaption {
     font-family: "IBM Plex Mono", monospace;
     background-color: white;
-    font-size: 17px;
-    position: absolute;
-    text-align: center;
-    left: 155px;
-    top: 130px;
+    border: 0;
     border-radius: 15px;
     width: 170px;
-    height: 25px;
+    height: 30px;
   }
   .enlaces .recipe_photo .img_recetas {
     width: 380px;
@@ -486,10 +486,9 @@ section {
     width: 170px;
     height: 30px;
     position: absolute;
-    left: 1000px;
-    top: 785px;
+    left: 1200px;
+    top: 750px;
   }
-/* ---fin--- */
 
   .image {
     position: relative;
@@ -726,4 +725,4 @@ section {
   }
 }
 
-
+/*# sourceMappingURL=styles.css.map */
