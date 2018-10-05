@@ -24,6 +24,10 @@ header nav {
 }
 
 nav .mobile {
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 0fb7644f1b7fbcc02e70b1629fb36beb1018e962
   height: 30px;
   background-color: #fc784f;
   border-radius: 5px;
@@ -83,11 +87,10 @@ img {
   width: 100%;
 }
 
-.carousel figure {
+.carousel .image .content-img {
   display: none;
 }
-
-.content-img {
+.carousel .carousel-image-desktop {
   display: none;
 }
 
