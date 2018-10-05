@@ -41,6 +41,9 @@ $hovr-color: #fa906f;
 }
 body {
   margin: 0;
+  .web-body{
+    margin: 0px 20px;
+  }
 }
 header {
   @include column-center();
@@ -262,7 +265,7 @@ section {
 }
 
 .networks {
-  @include jc-space-around();
+  @include jc-space-bt();
   height: 40px;
   border-bottom: 1px solid $info-color;
   i {
@@ -398,7 +401,12 @@ section {
 }
 
 @media (min-width: 800px) {
-
+  body .web-body{
+    margin: 0px 50px;
+    .video-profile-recipes{
+      @include column();
+    }
+  }
  nav  .mobile  {
     display: none;
   }
@@ -470,9 +478,6 @@ section {
     }
   }
 
-  .web-body{
-    margin: 0px 50px;
-  }
 
   .enlaces {
     display: flex;
@@ -571,12 +576,6 @@ section {
       font-size: 20px;
       font-family: $recipes-font;
     }
-  }
-
-
-  .recipes-main-container{
-    display: flex;
-    flex-direction: column-reverse;
   }
   .triple-container{
     display: flex;
@@ -720,21 +719,22 @@ section {
 
 
 
-
-  
-  .networks {
-    // height: 60px;
-    i {
-      height: 50px;
+  footer{
+  margin: 0;
+    .networks {
+      // height: 60px;
+      i {
+        height: 50px;
+      }
+      .network {
+        display: block;
+        display: contents;
+      }
     }
-    .network {
-      display: block;
-      display: contents;
+    .arrows {
+      display: none;
     }
-  }
-  .arrows {
-    display: none;
-  }
+  } 
 // receta //
   .breadcrumbs {
     width: 30%;
