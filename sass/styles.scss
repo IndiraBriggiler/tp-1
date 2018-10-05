@@ -393,16 +393,6 @@ section {
 }
 
 @media (min-width: 800px) {
-  header {
-    h1 {
-      font-family: "Indie Flower", cursive;
-      color: orange;
-      font-size: 50px;
-      text-align: center;
-      margin: 0%;
-      padding: 0%;
-    }
-  }
 
   .mobile  {
     display: none;
@@ -470,7 +460,7 @@ section {
   .web-body{
     margin: 0px 50px;
   }
-  
+
   .enlaces {
     display: flex;
     .recipe_photo {
