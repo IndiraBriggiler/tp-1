@@ -7,12 +7,9 @@
 body {
   margin: 0;
 }
-<<<<<<< HEAD
-=======
 body .web-body {
   margin: 0px 20px;
 }
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
 
 header {
   display: flex;
@@ -29,6 +26,9 @@ header nav {
   font-family: "IBM Plex Mono", monospace;
 }
 
+nav .desktop {
+  display: none;
+}
 nav .mobile {
   width: 100%;
   height: 30px;
@@ -101,14 +101,62 @@ img {
   display: none;
 }
 
-<<<<<<< HEAD
-=======
+.enlaces {
+  display: flex;
+  flex-direction: column;
+}
+.enlaces .recipe_photo {
+  display: flex;
+  position: relative;
+}
+.enlaces .recipe_photo a {
+  text-decoration: none;
+  display: flex;
+}
+.enlaces .recipe_photo a .img_platos {
+  width: 380px;
+  height: 260px;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  left: 40px;
+}
+.enlaces .recipe_photo .img_recetas {
+  width: 380px;
+  height: 260px;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  left: 60px;
+}
+.enlaces .recipe_photo figcaption {
+  position: absolute;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: white;
+  border: 0;
+  border-radius: 15px;
+  width: 170px;
+  height: 25px;
+  padding-top: 3px;
+  margin-left: 165px;
+  margin-top: 130px;
+}
+.enlaces .boton_desktop {
+  font-family: "IBM Plex Mono", monospace;
+  border: 0;
+  background-color: #ffffff;
+  width: 170px;
+  height: 30px;
+  left: 1060px;
+  top: 783px;
+}
+
 .video-profile-recipes {
   display: flex;
   flex-direction: column-reverse;
 }
 
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
 .triple-container {
   margin: 15px;
 }
@@ -245,11 +293,7 @@ section {
 
 .networks {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-around;
-=======
   justify-content: space-between;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   height: 40px;
   border-bottom: 1px solid #808080;
 }
@@ -368,12 +412,8 @@ section {
   border-left: #fc784f solid 2px;
   margin: 20px 0px;
 }
-<<<<<<< HEAD
-.quote p, .quote span {
-=======
 .quote p,
 .quote span {
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   margin-left: 15px;
 }
 .quote p {
@@ -393,8 +433,6 @@ section {
 }
 
 @media (min-width: 800px) {
-<<<<<<< HEAD
-=======
   body .web-body {
     margin: 0px 50px;
   }
@@ -403,7 +441,6 @@ section {
     flex-direction: column;
   }
 
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   nav .mobile {
     display: none;
   }
@@ -425,10 +462,10 @@ section {
     padding: 0%;
   }
 
-  .desktop {
+  nav .desktop {
     display: flex;
   }
-  .desktop .menu_main {
+  nav .desktop .menu_main {
     justify-content: space-around;
     list-style: none;
     display: flex;
@@ -436,34 +473,26 @@ section {
     font-size: 20px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
-<<<<<<< HEAD
-    color: #6C6A6A;
-=======
     color: #6c6a6a;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     text-decoration: none;
     text-align: center;
   }
-  .desktop .menu_main .platos {
+  nav .desktop .menu_main .platos {
     position: relative;
   }
-  .desktop .menu_main .platos:hover .submenu {
+  nav .desktop .menu_main .platos:hover .submenu {
     justify-content: space-between;
     display: flex;
     text-align: center;
     cursor: pointer;
   }
-  .desktop .menu_main .platos .submenu {
+  nav .desktop .menu_main .platos .submenu {
     align-content: center;
     display: none;
     flex-direction: column;
     list-style: none;
     position: absolute;
-<<<<<<< HEAD
-    background-color: #F8F3F2;
-=======
     background-color: #f8f3f2;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     width: 180px;
     height: 130px;
     margin-top: 0%;
@@ -485,15 +514,13 @@ section {
     justify-content: space-around;
   }
 
-<<<<<<< HEAD
   .web-body {
     margin: 0px 50px;
   }
 
-=======
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   .enlaces {
     display: flex;
+    flex-direction: row;
   }
   .enlaces .recipe_photo {
     display: flex;
@@ -529,33 +556,19 @@ section {
     width: 170px;
     height: 25px;
     padding-top: 3px;
-<<<<<<< HEAD
     margin-left: 165px;
     margin-top: 130px;
   }
   .enlaces .boton_desktop {
     font-family: "IBM Plex Mono", monospace;
-    background-color: #EF742D;
-=======
-    margin-left: 170px;
-    margin-top: 100px;
-  }
-  .enlaces .boton_desktop {
-    font-family: "IBM Plex Mono", monospace;
     background-color: #ef742d;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     border: 0;
     border-radius: 15px;
     width: 170px;
     height: 30px;
     position: absolute;
-<<<<<<< HEAD
     left: 1060px;
     top: 783px;
-=======
-    left: 1000px;
-    top: 750px;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   }
 
   .image {
@@ -580,10 +593,7 @@ section {
 
   .image:hover .content-img {
     background: rgba(219, 71, 12, 0.356);
-<<<<<<< HEAD
-=======
     display: block;
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   }
 
   .image:hover .content-img span {
@@ -612,14 +622,11 @@ section {
     font-family: "IBM Plex Mono", monospace;
   }
 
-<<<<<<< HEAD
   .recipes-main-container {
     display: flex;
     flex-direction: column-reverse;
   }
 
-=======
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   .triple-container {
     display: flex;
     height: 450px;
@@ -766,29 +773,15 @@ section {
     font-family: "IBM Plex Mono", monospace;
   }
 
-<<<<<<< HEAD
-  .networks i {
-    height: 50px;
-  }
   .networks .network {
     display: block;
     display: contents;
   }
-
-  .arrows {
-=======
-  footer {
-    margin: 0;
-  }
-  footer .networks i {
+  .networks i {
     height: 50px;
   }
-  footer .networks .network {
-    display: block;
-    display: contents;
-  }
-  footer .arrows {
->>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
+
+  .arrows {
     display: none;
   }
 
