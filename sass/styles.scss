@@ -359,6 +359,14 @@ section {
 .pionono img {
   border-radius: 15%;
 }
+.pionono-title {
+  font-family: $recipes-font;
+  font-size: 22px;
+  color: black;
+ }
+ .pionono-presentation {
+  font-size: 18px;
+ }
 
 .quote {
   border-left: $title-color solid 2px;
