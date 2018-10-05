@@ -59,7 +59,7 @@ nav {
     // display: none;
   }
   .mobile {
-    width: 500px;
+    // width: 500px;
     height: 30px;
     background-color: $title-color;
     border-radius: 5px;
@@ -69,7 +69,7 @@ nav {
     @include jc-ac-center();
     align-items: center;
     ul {
-      height: 15px;
+      height: 40px;
       display: flex;
       list-style: none;
       li {

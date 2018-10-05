@@ -24,7 +24,6 @@ header nav {
 }
 
 nav .mobile {
-  width: 500px;
   height: 30px;
   background-color: #fc784f;
   border-radius: 5px;
@@ -37,7 +36,7 @@ nav .mobile {
   align-items: center;
 }
 nav .mobile ul {
-  height: 15px;
+  height: 40px;
   display: flex;
   list-style: none;
 }
