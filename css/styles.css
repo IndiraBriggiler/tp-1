@@ -7,6 +7,12 @@
 body {
   margin: 0;
 }
+<<<<<<< HEAD
+=======
+body .web-body {
+  margin: 0px 20px;
+}
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
 
 header {
   display: flex;
@@ -95,6 +101,14 @@ img {
   display: none;
 }
 
+<<<<<<< HEAD
+=======
+.video-profile-recipes {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
 .triple-container {
   margin: 15px;
 }
@@ -231,7 +245,11 @@ section {
 
 .networks {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-around;
+=======
+  justify-content: space-between;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   height: 40px;
   border-bottom: 1px solid #808080;
 }
@@ -350,7 +368,12 @@ section {
   border-left: #fc784f solid 2px;
   margin: 20px 0px;
 }
+<<<<<<< HEAD
 .quote p, .quote span {
+=======
+.quote p,
+.quote span {
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   margin-left: 15px;
 }
 .quote p {
@@ -370,6 +393,17 @@ section {
 }
 
 @media (min-width: 800px) {
+<<<<<<< HEAD
+=======
+  body .web-body {
+    margin: 0px 50px;
+  }
+  body .web-body .video-profile-recipes {
+    display: flex;
+    flex-direction: column;
+  }
+
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   nav .mobile {
     display: none;
   }
@@ -402,7 +436,11 @@ section {
     font-size: 20px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
+<<<<<<< HEAD
     color: #6C6A6A;
+=======
+    color: #6c6a6a;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     text-decoration: none;
     text-align: center;
   }
@@ -421,7 +459,11 @@ section {
     flex-direction: column;
     list-style: none;
     position: absolute;
+<<<<<<< HEAD
     background-color: #F8F3F2;
+=======
+    background-color: #f8f3f2;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     width: 180px;
     height: 130px;
     margin-top: 0%;
@@ -443,10 +485,13 @@ section {
     justify-content: space-around;
   }
 
+<<<<<<< HEAD
   .web-body {
     margin: 0px 50px;
   }
 
+=======
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   .enlaces {
     display: flex;
   }
@@ -484,19 +529,33 @@ section {
     width: 170px;
     height: 25px;
     padding-top: 3px;
+<<<<<<< HEAD
     margin-left: 165px;
     margin-top: 130px;
   }
   .enlaces .boton_desktop {
     font-family: "IBM Plex Mono", monospace;
     background-color: #EF742D;
+=======
+    margin-left: 170px;
+    margin-top: 100px;
+  }
+  .enlaces .boton_desktop {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #ef742d;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     border: 0;
     border-radius: 15px;
     width: 170px;
     height: 30px;
     position: absolute;
+<<<<<<< HEAD
     left: 1060px;
     top: 783px;
+=======
+    left: 1000px;
+    top: 750px;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   }
 
   .image {
@@ -521,6 +580,10 @@ section {
 
   .image:hover .content-img {
     background: rgba(219, 71, 12, 0.356);
+<<<<<<< HEAD
+=======
+    display: block;
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   }
 
   .image:hover .content-img span {
@@ -549,11 +612,14 @@ section {
     font-family: "IBM Plex Mono", monospace;
   }
 
+<<<<<<< HEAD
   .recipes-main-container {
     display: flex;
     flex-direction: column-reverse;
   }
 
+=======
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
   .triple-container {
     display: flex;
     height: 450px;
@@ -700,6 +766,7 @@ section {
     font-family: "IBM Plex Mono", monospace;
   }
 
+<<<<<<< HEAD
   .networks i {
     height: 50px;
   }
@@ -709,6 +776,19 @@ section {
   }
 
   .arrows {
+=======
+  footer {
+    margin: 0;
+  }
+  footer .networks i {
+    height: 50px;
+  }
+  footer .networks .network {
+    display: block;
+    display: contents;
+  }
+  footer .arrows {
+>>>>>>> 3aac8a5b138aee17a94c6ad88a79fdd17cc0f4e4
     display: none;
   }
 
